@@ -87,6 +87,7 @@ const Skills = () => {
           </div>
         </div>
       </div> */}
+
       <section
       id="testimonial"
       className="w-full py-20 border-t-[1px] border-t-gray-700 mt-20"
@@ -94,7 +95,9 @@ const Skills = () => {
         <div className="flex justify-center items-center text-center">
           <Title title="WHAT CLIENTS SAY" des="My Skills" />
         </div>
-        <div className="grid grid-cols-6 gap-4 text-center">
+       
+        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 p-4 text-center">
+       
             <span className="skills-bannerIcon mx-auto">
               <FaHtml5 />
             </span>
@@ -107,7 +110,6 @@ const Skills = () => {
             <span className="skills-bannerIcon mx-auto">
               <FaReact />
             </span>
-            
           </div>
           </section>
       {/* <div className="w-full lgl:w-1/2">
