@@ -1,5 +1,5 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaFacebookF, FaYoutube, FaLinkedinIn, FaReact, FaHtml5, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaYoutube, FaLinkedinIn, FaReact, FaHtml5, FaInstagram, FaGithub } from "react-icons/fa";
 import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
 import { FadeIn } from "./FadeIn";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -36,9 +36,14 @@ const LeftBanner = () => {
           <div className="flex gap-4">
             <a href="https://www.youtube.com/@reactjsBD" target="_blank">
               <span className="bannerIcon">
-                <FaInstagram />
+                <FaGithub />
               </span>
             </a>
+            {/* <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+              <span className="bannerIcon">
+                <FaInstagram />
+              </span>
+            </a> */}
             <a
               href="https://www.linkedin.com/in/noor-mohammad-ab2245193/"
               target="_blank"
@@ -47,11 +52,11 @@ const LeftBanner = () => {
                 <FaLinkedinIn />
               </span>
             </a>
-            <a href="https://www.facebook.com/Noorlalu143/" target="_blank">
+            {/* <a href="https://www.facebook.com/Noorlalu143/" target="_blank">
               <span className="bannerIcon">
                 <FaFacebookF />
               </span>
-            </a>
+            </a> */}
           </div>
         </div>
         <div>
