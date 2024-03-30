@@ -9,7 +9,7 @@ const Education = () => {
       className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
     >
       {/* part one */}
-      <div>
+      <div className="hidden">
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px]">1998 - 2010</p>
           <h2 className="text-3xl md:text-4xl font-bold">Education Quality</h2>
