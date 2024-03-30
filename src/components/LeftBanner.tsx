@@ -34,7 +34,7 @@ const LeftBanner = () => {
             Find me in
           </h2>
           <div className="flex gap-4">
-            <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+            <a href="https://github.com/AksRamani" target="_blank">
               <span className="bannerIcon">
                 <FaGithub />
               </span>
@@ -45,7 +45,7 @@ const LeftBanner = () => {
               </span>
             </a> */}
             <a
-              href="https://www.linkedin.com/in/noor-mohammad-ab2245193/"
+              href="https://www.linkedin.com/in/aakash-ramani-541321235/"
               target="_blank"
             >
               <span className="bannerIcon">
