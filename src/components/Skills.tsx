@@ -1,4 +1,9 @@
 import { motion } from "framer-motion";
+import { FaFacebookF, FaYoutube, FaLinkedinIn, FaReact, FaHtml5, FaInstagram } from "react-icons/fa";
+import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
+import Title from "./Title";
+
 
 const Skills = () => {
   return (
@@ -7,7 +12,7 @@ const Skills = () => {
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
       className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
     >
-      <div className="w-full lgl:w-1/2">
+      {/* <div className="w-full lgl:w-1/2">
         <div className="py-12 font-titleFont flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px] uppercase">
             Features
@@ -81,9 +86,31 @@ const Skills = () => {
             </span>
           </div>
         </div>
-      </div>
-
-      <div className="w-full lgl:w-1/2">
+      </div> */}
+      <section
+      id="testimonial"
+      className="w-full py-20 border-t-[1px] border-t-gray-700 mt-20"
+    >
+        <div className="flex justify-center items-center text-center">
+          <Title title="WHAT CLIENTS SAY" des="My Skills" />
+        </div>
+        <div className="grid grid-cols-6 gap-4 text-center">
+            <span className="skills-bannerIcon mx-auto">
+              <FaHtml5 />
+            </span>
+            <span className="skills-bannerIcon mx-auto">
+              <SiTailwindcss />
+            </span>
+            <span className="skills-bannerIcon mx-auto">
+              <IoLogoJavascript />
+            </span>
+            <span className="skills-bannerIcon mx-auto">
+              <FaReact />
+            </span>
+            
+          </div>
+          </section>
+      {/* <div className="w-full lgl:w-1/2">
         <div className="py-12 font-titleFont flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px] uppercase">
             Features
@@ -157,7 +184,7 @@ const Skills = () => {
             </span>
           </div>
         </div>
-      </div>
+      </div> */}
     </motion.div>
   );
 };

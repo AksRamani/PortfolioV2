@@ -22,7 +22,7 @@ const LeftBanner = () => {
         </h1>
         <h2 className="text-4xl font-bold text-white">
           a <span>{text}</span>
-          <Cursor cursorStyle="|" cursorColor="#ff014f" />
+          <Cursor cursorStyle="|" cursorColor="#00ff00" />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wider">
         I am proficient in HTML, CSS, and JavaScript, including ES6 syntax. I have also worked extensively with React and Redux for building dynamic and scalable web applications. Additionally, I have knowledge of jQuery and Tailwind CSS to enhance the functionality and design of websites. My skills include creating responsive and user-friendly interfaces while ensuring cross-browser compatibility. I am capable of collaborating with designers and back-end developers to deliver high-quality products that meet client requirements. With a strong foundation in front-end development technologies, I am committed to staying updated with the latest trends and best practices in the field.
