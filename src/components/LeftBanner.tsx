@@ -1,11 +1,13 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaFacebookF, FaYoutube, FaLinkedinIn, FaReact } from "react-icons/fa";
+import { FaFacebookF, FaYoutube, FaLinkedinIn, FaReact, FaHtml5 } from "react-icons/fa";
 import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
 import { FadeIn } from "./FadeIn";
+import { IoLogoJavascript } from "react-icons/io5";
+
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
-    words: ["Professional Coder.", "Full Stack Developer.", "UI Designer."],
+    words: ["Professional Coder.", "Web Developer."],
     loop: true,
     typeSpeed: 20,
     deleteSpeed: 10,
@@ -16,16 +18,14 @@ const LeftBanner = () => {
       <div className="flex flex-col gap-5">
         <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4>
         <h1 className="text-6xl font-bold text-white">
-          Hi, I'm <span className="text-designColor capitalize">John doe</span>
+          Hi, I'm <span className="text-designColor capitalize">Aakash Ramani</span>
         </h1>
         <h2 className="text-4xl font-bold text-white">
           a <span>{text}</span>
           <Cursor cursorStyle="|" cursorColor="#ff014f" />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wider">
-          I use animation as a third dimension by which to simplify experiences
-          and kuiding thro each and every interaction. I'm not adding motion
-          just to spruce things up, but doing it in ways that.
+        I am proficient in HTML, CSS, and JavaScript, including ES6 syntax. I have also worked extensively with React and Redux for building dynamic and scalable web applications. Additionally, I have knowledge of jQuery and Tailwind CSS to enhance the functionality and design of websites. My skills include creating responsive and user-friendly interfaces while ensuring cross-browser compatibility. I am capable of collaborating with designers and back-end developers to deliver high-quality products that meet client requirements. With a strong foundation in front-end development technologies, I am committed to staying updated with the latest trends and best practices in the field.
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
@@ -60,16 +60,16 @@ const LeftBanner = () => {
           </h2>
           <div className="flex gap-4">
             <span className="bannerIcon">
-              <FaReact />
-            </span>
-            <span className="bannerIcon">
-              <SiNextdotjs />
+              <FaHtml5 />
             </span>
             <span className="bannerIcon">
               <SiTailwindcss />
             </span>
             <span className="bannerIcon">
-              <SiFigma />
+              <IoLogoJavascript />
+            </span>
+            <span className="bannerIcon">
+              <FaReact />
             </span>
           </div>
         </div>

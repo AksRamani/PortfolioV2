@@ -8,9 +8,9 @@ import { FadeIn } from "./FadeIn";
 
 const Resume = () => {
   const [educationData, setEducationData] = useState<Boolean>(true);
-  const [skillData, setSkillData] = useState<Boolean>(false);
-  const [experienceData, setExperienceData] = useState<Boolean>(false);
-  const [achievementData, setAchievementData] = useState<Boolean>(false);
+  const [skillData, setSkillData] = useState<Boolean>(true);
+  const [experienceData, setExperienceData] = useState<Boolean>(true);
+  const [achievementData, setAchievementData] = useState<Boolean>(true);
   return (
     <section
       id="resume"
@@ -21,7 +21,7 @@ const Resume = () => {
           <Title title="7+ YEARS OF EXPERIENCE" des="My Resume" />
         </div>
         <div>
-          <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+          <ul className="w-full grid-cols-1 md:grid-cols-2 xl:grid-cols-4 hidden">
             <li
               onClick={() => {
                 setEducationData(true);
@@ -86,8 +86,8 @@ const Resume = () => {
         </div>
         {educationData && <Education />}
         {skillData && <Skills />}
-        {achievementData && <Achievement />}
-        {experienceData && <Experience />}
+        {/* {achievementData && <Achievement />}
+        {experienceData && <Experience />} */}
       </FadeIn>
     </section>
   );
