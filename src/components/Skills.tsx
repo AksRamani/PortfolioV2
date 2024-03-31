@@ -98,16 +98,16 @@ const Skills = () => {
        
         <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 p-4 text-center">
        
-            <span className="skills-bannerIcon mx-auto">
+            <span className="skills-bannerIcon mx-auto bounce">
               <FaHtml5 />
             </span>
-            <span className="skills-bannerIcon mx-auto">
+            <span className="skills-bannerIcon mx-auto bounce2">
               <SiTailwindcss />
             </span>
-            <span className="skills-bannerIcon mx-auto">
+            <span className="skills-bannerIcon mx-auto bounce3">
               <IoLogoJavascript />
             </span>
-            <span className="skills-bannerIcon mx-auto">
+            <span className="skills-bannerIcon mx-auto bounce4">
               <FaReact />
             </span>
           </div>
