@@ -1,6 +1,6 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaFacebookF, FaYoutube, FaLinkedinIn, FaReact, FaHtml5 } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import { FaLinkedinIn, FaReact, FaHtml5, FaGithub } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
 import { FadeIn } from "./FadeIn";
 import { IoLogoJavascript } from "react-icons/io5";
 
@@ -22,7 +22,7 @@ const LeftBanner = () => {
         </h1>
         <h2 className="text-4xl font-bold text-white">
           a <span>{text}</span>
-          <Cursor cursorStyle="|" cursorColor="#ff014f" />
+          <Cursor cursorStyle="|" cursorColor="#00ff00" />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wider">
         I am proficient in HTML, CSS, and JavaScript, including ES6 syntax. I have also worked extensively with React and Redux for building dynamic and scalable web applications. Additionally, I have knowledge of jQuery and Tailwind CSS to enhance the functionality and design of websites. My skills include creating responsive and user-friendly interfaces while ensuring cross-browser compatibility. I am capable of collaborating with designers and back-end developers to deliver high-quality products that meet client requirements. With a strong foundation in front-end development technologies, I am committed to staying updated with the latest trends and best practices in the field.
@@ -34,24 +34,29 @@ const LeftBanner = () => {
             Find me in
           </h2>
           <div className="flex gap-4">
-            <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+            <a href="https://github.com/AksRamani" target="_blank">
               <span className="bannerIcon">
-                <FaYoutube />
+                <FaGithub />
               </span>
             </a>
+            {/* <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+              <span className="bannerIcon">
+                <FaInstagram />
+              </span>
+            </a> */}
             <a
-              href="https://www.linkedin.com/in/noor-mohammad-ab2245193/"
+              href="https://www.linkedin.com/in/aakash-ramani-541321235/"
               target="_blank"
             >
               <span className="bannerIcon">
                 <FaLinkedinIn />
               </span>
             </a>
-            <a href="https://www.facebook.com/Noorlalu143/" target="_blank">
+            {/* <a href="https://www.facebook.com/Noorlalu143/" target="_blank">
               <span className="bannerIcon">
                 <FaFacebookF />
               </span>
-            </a>
+            </a> */}
           </div>
         </div>
         <div>

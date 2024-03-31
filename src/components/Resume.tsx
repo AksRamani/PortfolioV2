@@ -2,15 +2,15 @@ import { useState } from "react";
 import Title from "./Title";
 import Education from "./Education";
 import Skills from "./Skills";
-import Experience from "./Experience";
-import Achievement from "./Achievement";
+// import Experience from "./Experience";
+// import Achievement from "./Achievement";
 import { FadeIn } from "./FadeIn";
 
 const Resume = () => {
   const [educationData, setEducationData] = useState<Boolean>(true);
   const [skillData, setSkillData] = useState<Boolean>(true);
-  const [experienceData, setExperienceData] = useState<Boolean>(true);
-  const [achievementData, setAchievementData] = useState<Boolean>(true);
+  // const [experienceData, setExperienceData] = useState<Boolean>(true);
+  // const [achievementData, setAchievementData] = useState<Boolean>(true);
   return (
     <section
       id="resume"
@@ -18,10 +18,10 @@ const Resume = () => {
     >
       <FadeIn>
         <div className="flex justify-center items-center text-center">
-          <Title title="7+ YEARS OF EXPERIENCE" des="My Resume" />
+          <Title title="1+ YEARS OF EXPERIENCE" des="My Resume" />
         </div>
         <div>
-          <ul className="w-full grid-cols-1 md:grid-cols-2 xl:grid-cols-4 hidden">
+          {/* <ul className="w-full grid-cols-1 md:grid-cols-2 xl:grid-cols-4 hidden">
             <li
               onClick={() => {
                 setEducationData(true);
@@ -82,7 +82,7 @@ const Resume = () => {
             >
               Achievements
             </li>
-          </ul>
+          </ul> */}
         </div>
         {educationData && <Education />}
         {skillData && <Skills />}

@@ -31,7 +31,15 @@ const Navbar = () => {
                 {title}
               </Link>
             </li>
+            
           ))}
+          <li className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300">
+            <a className="active">
+              <span className="">
+                Downlaod CV
+              </span>
+            </a>
+          </li>
         </ul>
         <span
           onClick={() => setShowMenu(!showMenu)}

@@ -21,7 +21,7 @@ export default {
         bodyColor: "#0B1120",
         lightText: "#c4cfde",
         boxBg: "linear-gradient(145deg, #1e2024, #23272b)",
-        designColor: "#ff014f",
+        designColor: "#00FF00",
       },
       boxShadow: {
         shadowOne: "10px 10px 19px #030712, -10px -10px 19px #0f172a",
