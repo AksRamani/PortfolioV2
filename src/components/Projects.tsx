@@ -1,6 +1,11 @@
 import Title from "./Title";
 import ProjectsCard from "./ProjectsCard";
-import { projectOne, projectThree, projectTwo } from "../assets";
+import {  todo,
+  userlist,
+  gamestore,
+  ansonbelt,
+  neat,
+  myr } from "../assets";
 import { FadeIn } from "./FadeIn";
 
 const Projects = () => {
@@ -18,40 +23,51 @@ const Projects = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
           <ProjectsCard
-            title="SOCIAL MEDIA CLONE"
-            des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-            src={projectOne}
+            title="TODO App"
+            des="Basic to TODO Project where user can add, edit or delete their tasks or list or any other information."
+            src={todo}
+            giturl={""}
+            weburl={"https://to-do-git-main-aksramani.vercel.app/"}
           />
           <ProjectsCard
-            title="E-commerce Website"
-            des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-            src={projectTwo}
+            title="User Details"
+            des="using json placeholder user API create a basic user details project to see the details of listed users."
+            src={userlist}
+            giturl={""}
+            weburl={"https://user-react-app.vercel.app/"}
+
           />
           <ProjectsCard
-            title="Chatting App"
-            des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-            src={projectThree}
+            title="Game Store"
+            des="simple react app for view games details, categories, prices, and other details."
+            src={gamestore}
+            giturl={""}
+            weburl={""}
+
           />
           <ProjectsCard
-            title="SOCIAL MEDIA CLONE"
-            des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-            src={projectThree}
+            title="Anson Belt"
+            des="at Anson Belt user can buy and customize belts as per choice."
+            src={ansonbelt}
+            giturl={""}
+            weburl={""}
+
           />
           <ProjectsCard
-            title="E-commerce Website"
-            des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-            src={projectOne}
+            title="Neat Method"
+            des="Neat Method is provid service for home organizations in USA and UK. Their helps to keep neat and clean Home, And also provide gadgets and other things (-baskets,stickers,drawers,hangers,containers) which helps to organize properties"
+            src={neat}
+            giturl={""}
+            weburl={""}
+
           />
           <ProjectsCard
-            title="Chatting App"
-            des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-            src={projectTwo}
+            title="Myr.ai"
+            des="Myr.ai allows operators to enhance and simplify their work and their tasks. They become autonomous, generators of data thanks to digital reports and can interact with all stakeholders - customers, managers, replacements, to guarantee the quality of the service."
+            src={myr}
+            giturl={""}
+            weburl={""}
+
           />
         </div>
       </FadeIn>
