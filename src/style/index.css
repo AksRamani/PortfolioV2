@@ -18,10 +18,10 @@
     @apply bg-black bg-opacity-40;
   }
   .contactInput {
-    @apply w-full h-12 rounded-lg border-b-[1px] border-b-gray-600 bg-[#020617] text-lightText px-4 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300;
+    @apply w-full h-12 rounded-lg border-b-[1px] border-b-gray-600 bg-[#000000] text-lightText px-4 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300;
   }
   .contactTextArea {
-    @apply w-full rounded-lg border-b-[1px] border-b-gray-600 bg-[#020617] text-lightText px-4 py-2 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300 resize-none;
+    @apply w-full rounded-lg border-b-[1px] border-b-gray-600 bg-[#000000] text-lightText px-4 py-2 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300 resize-none;
   }
 }
 .footer-transform{
@@ -37,4 +37,60 @@
 .skills-bannerIcon svg{
   height: 50px;
   width: 50px;
+}
+.bg-gradient-to-r{
+ background: #161616;
+ border: 1px solid #303033;
+}
+.bg-gradient-to-r:hover{
+  background: #1f1f1f !important;
+}
+
+  .bounce {
+    animation: bounce 2s ease infinite;
+  }
+@keyframes bounce {
+  70% { transform:translateY(0%); }
+  80% { transform:translateY(-15%); }
+  90% { transform:translateY(0%); }
+  95% { transform:translateY(-7%); }
+  97% { transform:translateY(0%); }
+  99% { transform:translateY(-3%); }
+  100% { transform:translateY(0); }
+}
+.bounce2 {
+  animation: bounce 4s ease infinite;
+}
+@keyframes bounce {
+70% { transform:translateY(0%); }
+80% { transform:translateY(-15%); }
+90% { transform:translateY(0%); }
+95% { transform:translateY(-7%); }
+97% { transform:translateY(0%); }
+99% { transform:translateY(-3%); }
+100% { transform:translateY(0); }
+}
+.bounce3 {
+  animation: bounce 6s ease infinite;
+}
+@keyframes bounce {
+70% { transform:translateY(0%); }
+80% { transform:translateY(-15%); }
+90% { transform:translateY(0%); }
+95% { transform:translateY(-7%); }
+97% { transform:translateY(0%); }
+99% { transform:translateY(-3%); }
+100% { transform:translateY(0); }
+}
+.bounce4 {
+  animation: bounce 8s ease infinite;
+}
+@keyframes bounce {
+70% { transform:translateY(0%); }
+80% { transform:translateY(-15%); }
+90% { transform:translateY(0%); }
+95% { transform:translateY(-7%); }
+97% { transform:translateY(0%); }
+99% { transform:translateY(-3%); }
+100% { transform:translateY(0); }
 }
