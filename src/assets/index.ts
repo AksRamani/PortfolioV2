@@ -13,6 +13,9 @@ import gamestore from "./images/projects/Screenshot_1.png"
 import ansonbelt from "./images/projects/anson.png"
 import neat from "./images/projects/neat.png"
 import myr from "./images/projects/myr.png"
+import p1 from "./images/images (1).jpeg"
+import p2 from "./images/AI-Portrait-400x400.jpg"
+import p3 from "./images/Portrait-Photography-400x400.jpg"
 
 
 export {
@@ -30,5 +33,9 @@ export {
   gamestore,
   ansonbelt,
   neat,
-  myr
+  myr,
+  p1,
+  p2,
+  p3
+
 };

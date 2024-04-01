@@ -35,9 +35,9 @@ const Navbar = () => {
 
           ))}
           <li className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-[14cf93] duration-300">
-            <a  href={CV} download className="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-medium transition-all bg-[#14cf93] rounded-full hover:bg-white group">
+            <a  href={CV} download className="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-medium transition-all bg-designColor rounded-full hover:bg-white group">
               <span className="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-100 transition-all border-white rounded-full"></span>
-              <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-[#14cf93]">Download CV</span>
+              <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-designColor">Download CV</span>
             </a>
           </li>
         </ul>
