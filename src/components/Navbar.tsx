@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="w-full h-24 sticky top-0 z-50 backdrop-blur-2xl transition-colors bg-bodyColor/70 mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 px-4">
       <div> 
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" height={"50px"} width={"130px"}/>
       </div>
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
@@ -54,10 +54,10 @@ const Navbar = () => {
           <div className="w-screen h-screen mdl:hidden overflow-scroll absolute top-0 left-0 bg-[#000] p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 pb-2 relative">
               <div className="mt-[-3px]">
-                <img src={logo} alt="logo" />
+                <img src={logo} alt="logo" height={"80PX"} width={"150PX"} />
                 <p className="text-sm text-gray-400 mt-2">
                 I'm skilled in HTML, CSS, and JavaScript, including ES6. Proficient in React and Redux, I create dynamic web apps. I use jQuery and Tailwind CSS for design and functionality, ensuring responsive interfaces and cross-browser compatibility. Committed to staying updated in front-end trends for high-quality client products.
-                </p>
+                  </p>
               </div>
               <ul className="flex flex-col gap-4">
                 {navLinksdata.map((item) => (
