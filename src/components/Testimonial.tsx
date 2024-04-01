@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { RiStarFill } from "react-icons/ri";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import Title from "./Title";
-import { quote, testimonialOne, testimonialTwo } from "../assets";
+import { quote, testimonialOne, testimonialTwo, p1, p2, p3 } from "../assets";
 import { FadeIn } from "./FadeIn";
 
 function SampleNextArrow(props: any) {
@@ -104,7 +104,7 @@ const Testimonial = () => {
                 <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne flex flex-col md:flex-row lgl:flex-col gap-8 justify-center md:justify-start lgl:justify-center">
                   <img
                     className="h-72 md:h-32 lgl:h-72 rounded-lg object-cover"
-                    src={testimonialOne}
+                    src={p1}
                     alt="testimonialOne"
                   />
                   <div className="w-full flex flex-col justify-end">
@@ -155,7 +155,7 @@ const Testimonial = () => {
                 <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne flex flex-col md:flex-row lgl:flex-col gap-8 justify-center md:justify-start lgl:justify-center">
                   <img
                     className="h-72 md:h-32 lgl:h-72 rounded-lg object-cover"
-                    src={testimonialTwo}
+                    src={p2}
                     alt="testimonialTwo"
                   />
                   <div className="w-full flex flex-col justify-end">
@@ -206,7 +206,7 @@ const Testimonial = () => {
                 <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#020617] to-[#23272b] p-8 rounded-lg shadow-shadowOne flex flex-col md:flex-row lgl:flex-col gap-8 justify-center md:justify-start lgl:justify-center">
                   <img
                     className="h-72 md:h-32 lgl:h-72 rounded-lg object-cover"
-                    src={testimonialOne}
+                    src={p3}
                     alt="testimonialOne"
                   />
                   <div className="w-full flex flex-col justify-end">
