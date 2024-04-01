@@ -11,7 +11,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <div className="w-full h-24 sticky top-0 z-50 backdrop-blur-2xl transition-colors bg-bodyColor/70 mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 px-4">
-      <div>
+      <div> 
         <img src={logo} alt="logo" />
       </div>
       <div>
@@ -42,20 +42,21 @@ const Navbar = () => {
           </li>
         </ul>
         <span
-          onClick={() => setShowMenu(!showMenu)}
+          onClick={() => {
+
+            setShowMenu(!showMenu)
+          }}
           className="text-xl mdl:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
         >
           <FiMenu />
         </span>
         {showMenu && (
-          <div className="w-[80%] h-screen mdl:hidden overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
-            <div className="flex flex-col gap-8 py-2 relative">
-              <div>
-                <img className="w-32" src={logo} alt="logo" />
+          <div className="w-screen h-screen mdl:hidden overflow-scroll absolute top-0 left-0 bg-[#000] p-4 scrollbar-hide">
+            <div className="flex flex-col gap-8 pb-2 relative">
+              <div className="mt-[-3px]">
+                <img src={logo} alt="logo" />
                 <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
+                I'm skilled in HTML, CSS, and JavaScript, including ES6. Proficient in React and Redux, I create dynamic web apps. I use jQuery and Tailwind CSS for design and functionality, ensuring responsive interfaces and cross-browser compatibility. Committed to staying updated in front-end trends for high-quality client products.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
