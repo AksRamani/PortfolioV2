@@ -26,47 +26,35 @@ const Projects = () => {
             title="TODO App"
             des="Basic to TODO Project where user can add, edit or delete their tasks or list or any other information."
             src={todo}
-            giturl={""}
-            weburl={"https://to-do-git-main-aksramani.vercel.app/"}
           />
           <ProjectsCard
             title="User Details"
             des="using json placeholder user API create a basic user details project to see the details of listed users."
             src={userlist}
-            giturl={""}
-            weburl={"https://user-react-app.vercel.app/"}
 
           />
           <ProjectsCard
             title="Game Store"
             des="simple react app for view games details, categories, prices, and other details."
             src={gamestore}
-            giturl={""}
-            weburl={""}
 
           />
           <ProjectsCard
             title="Anson Belt"
             des="at Anson Belt user can buy and customize belts as per choice."
             src={ansonbelt}
-            giturl={""}
-            weburl={""}
 
           />
           <ProjectsCard
             title="Neat Method"
             des="Neat Method is provid service for home organizations in USA and UK. Their helps to keep neat and clean Home, And also provide gadgets and other things (-baskets,stickers,drawers,hangers,containers) which helps to organize properties"
             src={neat}
-            giturl={""}
-            weburl={""}
 
           />
           <ProjectsCard
             title="Myr.ai"
             des="Myr.ai allows operators to enhance and simplify their work and their tasks. They become autonomous, generators of data thanks to digital reports and can interact with all stakeholders - customers, managers, replacements, to guarantee the quality of the service."
             src={myr}
-            giturl={""}
-            weburl={""}
 
           />
         </div>

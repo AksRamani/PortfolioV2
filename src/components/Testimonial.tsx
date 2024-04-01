@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { RiStarFill } from "react-icons/ri";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import Title from "./Title";
-import { quote, testimonialOne, testimonialTwo, p1, p2, p3 } from "../assets";
+import { quote, p1, p2, p3 } from "../assets";
 import { FadeIn } from "./FadeIn";
 
 function SampleNextArrow(props: any) {
