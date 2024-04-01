@@ -18,13 +18,13 @@ export default {
         xl: "1280px",
       },
       colors: {
-        bodyColor: "#0B1120",
+        bodyColor: "#111111",
         lightText: "#c4cfde",
-        boxBg: "linear-gradient(145deg, #1e2024, #23272b)",
+        boxBg: "linear-gradient(145deg, #1e2024, #000)",
         designColor: "#00FF00",
       },
       boxShadow: {
-        shadowOne: "10px 10px 19px #030712, -10px -10px 19px #0f172a",
+        shadowOne: "10px 10px 19px #030712, -10px -10px 19px #00000",
       },
     },
   },

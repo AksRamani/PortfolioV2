@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { FaFacebookF, FaYoutube, FaLinkedinIn, FaReact, FaHtml5, FaInstagram } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import {  FaReact, FaHtml5 } from "react-icons/fa";
+import { SiTailwindcss, SiRedux, SiNextdotjs  } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import Title from "./Title";
 
@@ -98,18 +98,30 @@ const Skills = () => {
        
         <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 p-4 text-center">
        
-            <span className="skills-bannerIcon mx-auto">
+            <div className="skills-bannerIcon mx-auto flex flex-col items-center bounce">
               <FaHtml5 />
-            </span>
-            <span className="skills-bannerIcon mx-auto">
+              <span className="mt-4"> HTML</span>
+            </div> 
+            <div className="skills-bannerIcon mx-auto flex flex-col items-center bounce2">
               <SiTailwindcss />
-            </span>
-            <span className="skills-bannerIcon mx-auto">
+              <span className="mt-4">Tailwind</span>
+            </div> 
+            <div className="skills-bannerIcon mx-auto flex flex-col items-center bounce3 ">
               <IoLogoJavascript />
-            </span>
-            <span className="skills-bannerIcon mx-auto">
+              <span className="mt-4">Javascript</span>
+            </div> 
+            <div className="skills-bannerIcon mx-auto flex flex-col items-center bounce4">
               <FaReact />
-            </span>
+              <span className="mt-4">Reat js</span>
+            </div> 
+            <div className="skills-bannerIcon mx-auto flex flex-col items-center bounce">
+              <SiRedux />
+              <span className="mt-4">Redux</span>
+            </div> 
+            <div className="skills-bannerIcon mx-auto flex flex-col items-center bounce2">  
+              <SiNextdotjs />
+              <span className="mt-4">Next Js</span>
+            </div>
           </div>
           </section>
       {/* <div className="w-full lgl:w-1/2">

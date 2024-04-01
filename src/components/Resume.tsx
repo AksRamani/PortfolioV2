@@ -7,8 +7,8 @@ import Skills from "./Skills";
 import { FadeIn } from "./FadeIn";
 
 const Resume = () => {
-  const [educationData, setEducationData] = useState<Boolean>(true);
-  const [skillData, setSkillData] = useState<Boolean>(true);
+  const [educationData] = useState<Boolean>(true);
+  const [skillData] = useState<Boolean>(true);
   // const [experienceData, setExperienceData] = useState<Boolean>(true);
   // const [achievementData, setAchievementData] = useState<Boolean>(true);
   return (
