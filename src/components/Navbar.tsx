@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { FaFacebookF, FaYoutube, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { logo } from "../assets";
 import { navLinksdata } from "../constants";
 import CV from "../assets/images/Aakash_Ramani_Resume.pdf"
@@ -84,13 +84,13 @@ const Navbar = () => {
                   Find me in
                 </h2>
                 <div className="flex gap-4">
-                  <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+                  <a href="https://github.com/AksRamani" target="_blank">
                     <span className="bannerIcon">
-                      <FaYoutube />
+                      <FaGithub />
                     </span>
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/noor-mohammad-ab2245193/"
+                    href="https://www.linkedin.com/in/aakash-ramani-541321235/"
                     target="_blank"
                   >
                     <span className="bannerIcon">
@@ -98,7 +98,7 @@ const Navbar = () => {
                     </span>
                   </a>
                   <a
-                    href="https://www.facebook.com/Noorlalu143/"
+                    href="https://www.facebook.com/aakash.ramani.112?mibextid=ZbWKwL"
                     target="_blank"
                   >
                     <span className="bannerIcon">
