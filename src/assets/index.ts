@@ -16,6 +16,8 @@ import myr from "./images/projects/myr.png"
 import p1 from "./images/images (1).jpeg"
 import p2 from "./images/AI-Portrait-400x400.jpg"
 import p3 from "./images/Portrait-Photography-400x400.jpg"
+import qr from "./images/projects/qr.png"
+import skycast from "./images/projects/skycast.png"
 
 
 export {
@@ -36,6 +38,7 @@ export {
   myr,
   p1,
   p2,
-  p3
-
+  p3,
+  qr,
+  skycast
 };
