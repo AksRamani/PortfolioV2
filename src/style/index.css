@@ -94,3 +94,14 @@
 99% { transform:translateY(-3%); }
 100% { transform:translateY(0); }
 }
+@media screen and (max-width: 375px) {
+   .font-bodyFont{
+    min-height: 1000vh;
+    overflow-y: auto;  
+  }
+  .responsiv-footer{
+    text-align: center;
+    row-gap: 30px;
+    flex-direction: column;
+  }
+}

@@ -3,7 +3,7 @@
 const Footer = () => {
   return (
     <>
-    <div className="w-full py-7 flex justify-between h-auto border-b-[1px] border-b-black footer-transform sm:flex-col">
+    <div className="w-full py-7 flex justify-between h-auto border-b-[1px] border-b-black footer-transform sm:flex-col responsiv-footer">
       <div >
         <ul className="flex ">
           <li className="me-3"><a href="https://www.linkedin.com/in/aakash-ramani-541321235/"> LINKEDIN</a></li>
