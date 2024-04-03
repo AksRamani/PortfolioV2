@@ -18,7 +18,7 @@ import p2 from "./images/AI-Portrait-400x400.jpg"
 import p3 from "./images/Portrait-Photography-400x400.jpg"
 import qr from "./images/projects/qr.png"
 import skycast from "./images/projects/skycast.png"
-
+import contactus from "./images/contact/contact-us.svg"
 
 export {
   logo,
@@ -40,5 +40,6 @@ export {
   p2,
   p3,
   qr,
-  skycast
+  skycast,
+  contactus
 };
