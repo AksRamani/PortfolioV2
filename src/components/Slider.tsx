@@ -10,21 +10,21 @@ const Slider = () => {
   </div>
   <div className="marquee">
     <div className="marquee_group">
-      <span>Aakash</span>
-      <span>Ramani</span>
-      <span>Aakash</span>
-      <span>Ramani</span>
-      <span>Aakash</span>
-      <span>Ramani</span>
-      {/* <span>Web Developer</span> */}
+      <span className="text-bg">Aakash</span>
+      <span className="text-bg">Ramani</span>
+      <span className="text-bg">Aakash</span>
+      <span className="text-bg">Ramani</span>
+      <span className="text-bg">Aakash</span>
+      <span className="text-bg">Ramani</span>
     </div>
     <div className="marquee_group">
-      <span>Aakash</span>
-      <span>Ramani</span>
-      <span>Aakash</span>
-      <span>Ramani</span>
-      <span>Aakash</span>
-      <span>Ramani</span>
+      <span className="text-bg">Aakash</span>
+      <span className="text-bg">Ramani</span>
+      <span className="text-bg">Aakash</span>
+      <span className="text-bg">Ramani</span>
+      <span className="text-bg">Aakash</span>
+      <span className="text-bg">Ramani</span>
+
       {/* <span>Web Developer</span> */}
     </div>
   </div>
