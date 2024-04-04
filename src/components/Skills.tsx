@@ -1,205 +1,65 @@
 import { motion } from "framer-motion";
-import {  FaReact, FaHtml5 } from "react-icons/fa";
-import { SiTailwindcss, SiRedux, SiNextdotjs  } from "react-icons/si";
+import { FaReact, FaHtml5 } from "react-icons/fa";
+import { SiTailwindcss, SiRedux, SiNextdotjs } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import Title from "./Title";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 0.5 } }}
-      className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
-    >
-      {/* <div className="w-full lgl:w-1/2">
-        <div className="py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px] uppercase">
-            Features
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold">Design Skill</h2>
-        </div>
-        <div className='className="mt-14 w-full flex flex-col gap-6'>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">Photoshot</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-full h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">100%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">Figma</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[90%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">90%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">Adobe XD.</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[60%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">60%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">Adobe Illustrator</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[70%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">70%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">Design</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[95%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">95%</span>
-              </motion.span>
-            </span>
-          </div>
-        </div>
-      </div> */}
+    <>
 
-      <section
-      id="testimonial"
-      className="w-full py-20 border-t-[1px] border-t-gray-700 mt-20"
-    >
-        <div className="flex justify-center items-center text-center">
-          <Title title="WHAT CLIENTS SAY" des="My Skills" />
-        </div>
-       
-        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 p-4 text-center">
-       
-            <div className="skills-bannerIcon mx-auto flex flex-col items-center bounce">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { duration: 0.5 } }}
+        className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
+      >
+
+        <section
+          id="testimonial"
+          className="w-full py-20 border-t-[1px] border-t-gray-700 mt-20"
+        >
+          <div className="flex justify-center items-center text-center">
+            <Title title="WHAT CLIENTS SAY" des="My Skills" />
+          </div>
+
+          <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 p-4 text-center">
+
+            <div data-aos="zoom-out-up" className="skills-bannerIcon mx-auto flex flex-col items-center">
               <FaHtml5 />
               <span className="mt-4"> HTML</span>
-            </div> 
-            <div className="skills-bannerIcon mx-auto flex flex-col items-center bounce2">
+            </div>
+            <div data-aos="zoom-in-up" className="skills-bannerIcon mx-auto flex flex-col items-center ">
               <SiTailwindcss />
               <span className="mt-4">Tailwind</span>
-            </div> 
-            <div className="skills-bannerIcon mx-auto flex flex-col items-center bounce3 ">
+            </div>
+            <div data-aos="zoom-out-up" className="skills-bannerIcon mx-auto flex flex-col items-center  ">
               <IoLogoJavascript />
               <span className="mt-4">Javascript</span>
-            </div> 
-            <div className="skills-bannerIcon mx-auto flex flex-col items-center bounce4">
+            </div>
+            <div data-aos="zoom-in-up" className="skills-bannerIcon mx-auto flex flex-col items-center ">
               <FaReact />
               <span className="mt-4">Reat js</span>
-            </div> 
-            <div className="skills-bannerIcon mx-auto flex flex-col items-center bounce">
+            </div>
+            <div data-aos="zoom-out-up" className="skills-bannerIcon mx-auto flex flex-col items-center ">
               <SiRedux />
               <span className="mt-4">Redux</span>
-            </div> 
-            <div className="skills-bannerIcon mx-auto flex flex-col items-center bounce2">  
+            </div>
+            <div data-aos="zoom-in-up" className="skills-bannerIcon mx-auto flex flex-col items-center ">
               <SiNextdotjs />
               <span className="mt-4">Next Js</span>
             </div>
           </div>
-          </section>
-      {/* <div className="w-full lgl:w-1/2">
-        <div className="py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px] uppercase">
-            Features
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold">Development Skill</h2>
-        </div>
-        <div className="flex flex-col gap-6">
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">React</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-full h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">100%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">HTML 5</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[95%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">95%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">CSS3</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[80%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">80%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">JAVASCRIPT</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[75%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">75%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">SOFTWARE</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[90%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">90%</span>
-              </motion.span>
-            </span>
-          </div>
-        </div>
-      </div> */}
-    </motion.div>
+        </section>
+
+      </motion.div>
+    </>
   );
 };
 
