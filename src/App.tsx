@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 import Testimonial from "./components/Testimonial";
+import Slider from "./components/Slider";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="px-4">
         <div className="max-w-screen-xl mx-auto">
           <Banner />
+          <Slider />
           <Feature />
           <Projects />
           <Resume />
