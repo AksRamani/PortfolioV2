@@ -23,10 +23,16 @@ export default {
         boxBg: "linear-gradient(145deg, #1e2024, #000)",
         designColor: "#00FF00",
       },
+      keyframes: {
+        'infinite-scroll': {
+            from: { transform: 'translateX(0)' },
+            to: { transform: 'translateX(-100%)' },
+        }
+    },
       boxShadow: {
         shadowOne: "10px 10px 19px #030712, -10px -10px 19px #00000",
       },
     },
   },
   plugins: [],
-};
+}
