@@ -27,8 +27,21 @@ export default {
         'infinite-scroll': {
             from: { transform: 'translateX(0)' },
             to: { transform: 'translateX(-100%)' },
-        }
+        }, 
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        marquee2: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
     },
+    animation: {
+      'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      marquee: 'marquee 15s linear infinite',
+      marquee2: 'marquee2 15s linear infinite',
+  },
       boxShadow: {
         shadowOne: "10px 10px 19px #030712, -10px -10px 19px #00000",
       },

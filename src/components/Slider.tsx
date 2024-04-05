@@ -2,28 +2,35 @@ import "../style/marquee.css"
 
 const Slider = () => {
   return (
-    <section className="w-full py-20">
-      <div className="relative">
-        <div className="absolute right-0 top-14">
-          <div className="marquee">
-          <div className="marquee__wrapper marquee__wrapper--a">
-         <div className="font">"Code with heart, shine with Tailwind"
-         </div>
-         <div className="font">"Let's sculpt wonders with React JS" 
-         </div>
-         <div className="font">Transforming visions into interactive marvels</div>
-      </div>
-      <div className="marquee__wrapper marquee__wrapper--b" aria-hidden="true">
-         <div className="font">"Code with heart, shine with Tailwind"
-         </div>
-         <div className="font">"Let's sculpt wonders with React JS"
-         </div>
-         <div className="font">Transforming visions into interactive marvels</div>
-      </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div className="">
+    <div className="relative flex overflow-x-hidden overflow-y-hidden border-t border-b translate-y-1/2 rotate-[-5deg] mb-14">
+    <div className="py-5 animate-marquee whitespace-nowrap ">
+      <span className="text-[40px] pl-[200px]" >"Code with heart, shine with Tailwind." </span>
+      <span className="text-[40px] pl-[200px] text-[#00ff00]">Ⓐ </span>
+      <span className="text-[40px] pl-[200px]" > "Let's sculpt wonders with React JS."</span>
+      <span className="text-[40px] pl-[200px] text-[#00ff00]"> Ⓐ</span>
+      <span className="text-[40px] pl-[200px]" > "Transforming visions into interactive marvels."</span>
+      <span className="text-[40px] pl-[200px] text-[#00ff00]">Ⓐ </span>
+
+      {/* <span className="text-[40px] pl-[200px]">Marquee Item 4</span>
+      <span className="text-[40px] pl-[200px]">Marquee Item 5</span> */}
+    </div>
+  
+    <div className="absolute top-0 py-5 animate-marquee2 whitespace-nowrap pl-1">
+      <span className="text-[40px] pl-[200px]" > "Code with heart, shine with Tailwind." </span>
+      <span className="text-[40px] pl-[200px] text-[#00ff00]">Ⓐ </span>
+      
+      <span className="text-[40px] pl-[200px]" > "Let's sculpt wonders with React JS."</span>
+      <span className="text-[40px] pl-[200px] text-[#00ff00]">Ⓐ </span>
+
+      <span className="text-[40px] pl-[200px]" > "Transforming visions into interactive marvels."</span>
+      <span className="text-[40px] pl-[200px] text-[#00ff00]">Ⓐ </span>
+
+      {/* <span className="text-[50px] mx-4">Marquee Item 4</span>
+      <span className="text-[50px] mx-4">Marquee Item 5</span> */}
+    </div>
+  </div>
+  </div>
   )
 }
 
