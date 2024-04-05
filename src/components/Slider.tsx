@@ -1,4 +1,4 @@
-import "../style/marquee.css" 
+import "../style/marquee.css"
 
 const Slider = () => {
   return (
