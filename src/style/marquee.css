@@ -1,83 +1,70 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+.marquee {
+  --gap: 2px;
+  --duration: 5s;
+  background-color: cornflowerblue;
+  display: flex;
+  gap: var(--gap);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+
+.marquee__wrapper { 
+  display: flex;
+  flex-shrink: 0;
+  gap: var(--gap);
+  justify-content: space-around;
+  min-width: 100%;
+  padding-block: 30px;
+}
+
+.marquee__wrapper svg {
+  height: 5rem;
+}
+
+.marquee__wrapper--a {
+  animation: 
+    var(--duration) slide-1 1 linear, 
+   calc(var(--duration) * 2) slide-2 var(--duration) infinite linear; 
+  /* // background-color: cornflowerblue; */
+}
+
+.marquee__wrapper--b {
+    animation: calc(var(--duration) * 2) slide-3 infinite linear;
+}
+
+@keyframes slide-1 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+@keyframes slide-2 {
+  0% {
+    transform: translateX(100%);
   }
 
-  .marquee_container {
-    height: 200px;
-    position: relative;
-    overflow: hidden;
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+@keyframes slide-3 {
+  0% {
+    transform: translateX(0);
   }
 
-  .marquee {
-    border: 1px solid rgb(247, 247, 247);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%) rotate(-5deg);
-    left: -1%;
-    width: 102%;
-    height: fit-content;
-    display: flex;
-    gap: 10px;
-    overflow: hidden;
+  100% {
+    transform: translateX(-200%);
   }
-  
-  .marquee_group {
-    display: flex;
-    flex-shrink: 0;
-    gap: 45px;
-    min-width: 100%;
-    align-items: center;
-    justify-content: center;
-    animation: scroll 10s linear infinite;
-  }
-  .marquee span {
-    font-size: 50px;
-    font-weight: 500;
-  }
-  .text-bg{
-    color :#00ff00 !important
-
-  }
-  .marquee_group span:nth-child(1),
-  .marquee_group span:nth-child(3) {
-    font-family: "Clash Display";
-  }
-  .marquee_group span:nth-child(2) {
-    font-family: "Stardom", sans-serif;
-  }
-  @keyframes scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(calc(-100% - 50px));
-    }
-  }
-  .blobs {
-    height: 200px;
-    position: relative;
-  }
-  .blob1 {
-    position: absolute;
-    left: 10%;
-    top: 1%;
-    width: 300px;
-    height: 50px;
-    /* background: #00ff00; */
-    border-radius: 40%;
-    filter: blur(120px);
-  }
-
-  .blob2 {
-    position: absolute;
-    left: 80%;
-    top: 10%;
-    width: 500px;
-    height: 50px;
-    /* background: #389438; */
-    border-radius: 40%;
-    filter: blur(100px);
-  }
-  
+}
+.font {
+  font-size :30px
+}

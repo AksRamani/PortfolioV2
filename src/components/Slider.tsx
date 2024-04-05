@@ -1,35 +1,29 @@
-import "../style/marquee.css" 
+import "../style/marquee.css"
 
 const Slider = () => {
   return (
-    <div>
-        <div className="marquee_container">
-  <div className="blobs">
-    <div className="blob1"></div>
-    <div className="blob2"></div>
-  </div>
-  <div className="marquee">
-    <div className="marquee_group">
-      <span className="text-bg">Aakash</span>
-      <span className="text-bg">Ramani</span>
-      <span className="text-bg">Aakash</span>
-      <span className="text-bg">Ramani</span>
-      <span className="text-bg">Aakash</span>
-      <span className="text-bg">Ramani</span>
-    </div>
-    <div className="marquee_group">
-      <span className="text-bg">Aakash</span>
-      <span className="text-bg">Ramani</span>
-      <span className="text-bg">Aakash</span>
-      <span className="text-bg">Ramani</span>
-      <span className="text-bg">Aakash</span>
-      <span className="text-bg">Ramani</span>
-
-      {/* <span>Web Developer</span> */}
-    </div>
-  </div>
-</div>
-    </div>
+    <section className="w-full py-20">
+      <div className="relative">
+        <div className="absolute right-0 top-14">
+          <div className="marquee">
+          <div className="marquee__wrapper marquee__wrapper--a">
+         <div className="font">"Code with heart, shine with Tailwind"
+         </div>
+         <div className="font">"Let's sculpt wonders with React JS" 
+         </div>
+         <div className="font">Transforming visions into interactive marvels</div>
+      </div>
+      <div className="marquee__wrapper marquee__wrapper--b" aria-hidden="true">
+         <div className="font">"Code with heart, shine with Tailwind"
+         </div>
+         <div className="font">"Let's sculpt wonders with React JS"
+         </div>
+         <div className="font">Transforming visions into interactive marvels</div>
+      </div>
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
 
