@@ -11,6 +11,7 @@
   }
 
   .marquee {
+    
     border: 1px solid rgb(247, 247, 247);
     position: absolute;
     top: 50%;
