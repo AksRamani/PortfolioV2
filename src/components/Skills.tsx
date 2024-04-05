@@ -1,7 +1,4 @@
 import { motion } from "framer-motion";
-import { FaReact, FaHtml5 } from "react-icons/fa";
-import { SiTailwindcss, SiRedux, SiNextdotjs } from "react-icons/si";
-import { IoLogoJavascript } from "react-icons/io5";
 import Title from "./Title";
 import AOS from "aos";
 import "aos/dist/aos.css";
