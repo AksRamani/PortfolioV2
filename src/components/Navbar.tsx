@@ -55,7 +55,7 @@ const Navbar = () => {
             <div className="flex flex-col gap-8 pb-2 relative">
               <div className="mt-[-3px]">
                 <img src={logo} alt="logo" height={"80PX"} width={"150PX"} />
-                <p className="text-sm text-gray-400 mt-2">
+                <p className="text-sm text-gray-400 mt-2 text-justify">
                 I'm skilled in HTML, CSS, and JavaScript, including ES6. Proficient in React and Redux, I create dynamic web apps. I use jQuery and Tailwind CSS for design and functionality, ensuring responsive interfaces and cross-browser compatibility. Committed to staying updated in front-end trends for high-quality client products.
                   </p>
               </div>
