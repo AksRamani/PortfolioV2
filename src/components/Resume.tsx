@@ -1,14 +1,12 @@
 import { useState } from "react";
 import Title from "./Title";
 import Education from "./Education";
-import Skills from "./Skills";
 // import Experience from "./Experience";
 // import Achievement from "./Achievement";
 import { FadeIn } from "./FadeIn";
 
 const Resume = () => {
   const [educationData] = useState<Boolean>(true);
-  const [skillData] = useState<Boolean>(true);
   // const [experienceData, setExperienceData] = useState<Boolean>(true);
   // const [achievementData, setAchievementData] = useState<Boolean>(true);
   return (
@@ -85,7 +83,7 @@ const Resume = () => {
           </ul> */}
         </div>
         {educationData && <Education />}
-        {skillData && <Skills />}
+        {/* {skillData && <Skills />} */}
         {/* {achievementData && <Achievement />}
         {experienceData && <Experience />} */}
       </FadeIn>
