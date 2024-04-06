@@ -1,9 +1,9 @@
-import { useState } from "react";
+
 import Slider from "react-slick";
 import { RiStarFill } from "react-icons/ri";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import Title from "./Title";
-import { quote, p1, p2, p3 } from "../assets";
+import {  p1, p2, p3 } from "../assets";
 import { FadeIn } from "./FadeIn";
 
 function SampleNextArrow(props: any) {
@@ -31,7 +31,6 @@ function SamplePrevArrow(props: any) {
 }
 
 const Testimonial = () => {
-  const [dotActive, setDocActive] = useState(0);
   const settings = {
     dots: true,
     infinite: true,
@@ -40,8 +39,7 @@ const Testimonial = () => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    beforeChange: (next: any) => {
-      setDocActive(next);
+    beforeChange: () => {
     },
     appendDots: (dots: any) => (
       <div
