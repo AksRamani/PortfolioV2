@@ -68,21 +68,21 @@ const Testimonial = () => {
         style={
           i === dotActive
             ? {
-                width: "12px",
-                height: "12px",
-                color: "blue",
-                background: "#14cf93",
-                borderRadius: "50%",
-                cursor: "pointer",
-              }
+              width: "12px",
+              height: "12px",
+              color: "blue",
+              background: "#14cf93",
+              borderRadius: "50%",
+              cursor: "pointer",
+            }
             : {
-                width: "12px",
-                height: "12px",
-                color: "blue",
-                background: "gray",
-                borderRadius: "50%",
-                cursor: "pointer",
-              }
+              width: "12px",
+              height: "12px",
+              color: "blue",
+              background: "gray",
+              borderRadius: "50%",
+              cursor: "pointer",
+            }
         }
       ></div>
     ),
@@ -171,7 +171,7 @@ const Testimonial = () => {
                 <div className="w-full lgl:w-[60%] h-full flex flex-col justify-between">
                   <img className="w-20 lgl:w-32" src={quote} alt="quote" />
                   <div className="w-full h-[70%] py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] rounded-lg shadow-shadowOne p-4 lgl:p-8 flex flex-col justify-center gap-4 lgl:gap-8">
-                    <div className="flex flex-col justify-between lgl:items-center py-6 border-b-2 border-b-gray-900">
+                    <div className="flex flex-col justify-between lgl:items-center py-6 border-b-2 border-b-[#0000]">
                       <div>
                         <h3 className="text-xl lgl:text-2xl font-medium tracking-wide">
                           Travel Mobile App Design.
@@ -220,13 +220,9 @@ const Testimonial = () => {
                   </div>
                 </div>
                 <div className="w-full lgl:w-[60%] h-full flex flex-col justify-between">
-                  <img
-                    className="w-20 lgl:w-32 bg-[#23272b] rounded-md"
-                    src={quote}
-                    alt="quote"
-                  />
-                  <div className="w-full h-[70%] py-10 bg-gradient-to-r from-[#0B1120] to-[#0B1120] rounded-lg shadow-shadowOne p-4 lgl:p-8 flex flex-col justify-center gap-4 lgl:gap-8">
-                    <div className="flex flex-col justify-between lgl:items-center py-6 border-b-2 border-b-gray-900">
+                  <img className="w-20 lgl:w-32" src={quote} alt="quote" />
+                  <div className="w-full h-[70%] py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] rounded-lg shadow-shadowOne p-4 lgl:p-8 flex flex-col justify-center gap-4 lgl:gap-8">
+                    <div className="flex flex-col justify-between lgl:items-center py-6 border-b-2 border-b-[#0000]">
                       <div>
                         <h3 className="text-xl lgl:text-2xl font-medium tracking-wide">
                           Travel Mobile App Design.
