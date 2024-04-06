@@ -10,7 +10,7 @@ function SampleNextArrow(props: any) {
   const { onClick } = props;
   return (
     <div
-      className="w-14 h-12  bg-[#161616] hover:bg-black duration-300 rounded-md text-2xl border-[#2C2C2F] border text-gray-400 flex justify-center items-center mt-2 absolute bottom-59 right-0 shadow-shadowOne cursor-pointer z-10"
+      className="w-14 h-12  bg-[#161616] hover:bg-black duration-300 rounded-md text-2xl border-[#2C2C2F] border text-gray-400 flex justify-center items-center mt-2 absolute bottom-58 right-0 shadow-shadowOne cursor-pointer z-10"
       onClick={onClick}
     >
       <HiArrowRight />
@@ -22,7 +22,7 @@ function SamplePrevArrow(props: any) {
   const { onClick } = props;
   return (
     <div
-      className="w-14 h-12 bg-[#161616] hover:bg-black duration-300 rounded-md text-2xl border-[#2C2C2F] border text-gray-400 flex justify-center items-center mt-2 absolute bottom-59 right-20 shadow-shadowOne cursor-pointer z-10"
+      className="w-14 h-12 bg-[#161616] hover:bg-black duration-300 rounded-md text-2xl border-[#2C2C2F] border text-gray-400 flex justify-center items-center mt-2 absolute bottom-58 right-20 shadow-shadowOne cursor-pointer z-10"
       onClick={onClick}
     >
       <HiArrowLeft />
