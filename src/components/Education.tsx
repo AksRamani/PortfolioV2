@@ -42,7 +42,7 @@ const Education = () => {
           <p className="text-sm text-designColor tracking-[4px]">2022 - 2024</p>
           <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
         </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+        <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10 text-justify">
           <ResumeCard
             title="Jr. Web Developer"
             subTitle="Cipher Craft Pvt. Ltd - (March/2023 - Present)"
@@ -50,10 +50,10 @@ const Education = () => {
             des="At Cipher Craft provided the catalyst for my journey to advance my skills in React. Through dedication, mentorship, and hands-on experience, I transformed from a novice to a proficient React developer, equipped with the knowledge and confidence to tackle even the most challenging projects. As I continue to grow and evolve in my career, I carry with me the lessons learned and the experiences gained on this transformative journey toward mastery in React. "
           />
           <ResumeCard
-            title="Web Developer & Trainer"
+            title="Web Developer & Trainee"
             subTitle="Hopiant Pvt. Ltd - (July/2022 - Jan/2023)"
             result="Junagadh"
-            des="At Hopiant get training in javaScript, Javasacript ES6, Jquery, Shopify-hydrogen, Tailwind CSS and React-Js And also worked on live projects as part of development teams."
+            des="At Hopiant i got training in javaScript, Javasacript ES6, Jquery, Shopify-hydrogen, Tailwind CSS and React-Js And also worked on live projects as part of development teams."
           />
           <ResumeCard
             title="Internship "
