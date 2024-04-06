@@ -96,7 +96,6 @@
 }
 @media screen and (max-width: 375px) {
    .font-bodyFont{
-    min-height: 1000vh;
     overflow-y: auto;  
   }
   .responsiv-footer{
@@ -105,7 +104,17 @@
     flex-direction: column;
   }
 }
-
+@media screen and (max-width: 676px) {
+  .height-box{
+    height: 100% !important;
+  }
+  .responsive-menu{
+    align-items: flex-start !important;
+  }
+}
+.slick-dots{
+  display: none;
+}
 .tossing:hover {
   animation-name: tossing;
   -webkit-animation-name: tossing;

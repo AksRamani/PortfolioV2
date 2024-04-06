@@ -85,7 +85,7 @@ const Resume = () => {
           </ul> */}
         </div>
         {educationData && <Education />}
-        {skillData && <Skills />}
+        {/* {skillData && <Skills />} */}
         {/* {achievementData && <Achievement />}
         {experienceData && <Experience />} */}
       </FadeIn>

@@ -10,14 +10,15 @@ const Skills = () => {
   }, []);
   return (
     <>
-      <motion.div
+      <motion.section
+       id="skills"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 0.5 } }}
         className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
       >
-        <section
-          id="testimonial"
-          className="w-full py-20 border-t-[1px] border-t-gray-700 mt-20"
+        <div
+         
+          className="w-full py-20 border-b-[1px] border-b-gray-700"
         >
           <div className="flex justify-center items-center text-center">
             <Title title="Areas of Expertise" des="My Skills" />
@@ -25,7 +26,7 @@ const Skills = () => {
 
           <div className="relative font-inter antialiased">
             <main className="relative  flex flex-col justify-center overflow-hidden">
-              <div className="w-full mx-auto px-4 md:px-6 py-24">
+              <div className="w-full mx-auto px-4 md:px-6 py-10">
                 <div className="text-center">
                   {/* <!-- Logo Carousel animation  --> */}
                   <div
@@ -187,8 +188,8 @@ const Skills = () => {
               </div>
             </main>
           </div>
-        </section>
-      </motion.div>
+        </div>
+      </motion.section>
     </>
   );
 };
