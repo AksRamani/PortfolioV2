@@ -50,10 +50,10 @@ const Education = () => {
             des="At Cipher Craft provided the catalyst for my journey to advance my skills in React. Through dedication, mentorship, and hands-on experience, I transformed from a novice to a proficient React developer, equipped with the knowledge and confidence to tackle even the most challenging projects. As I continue to grow and evolve in my career, I carry with me the lessons learned and the experiences gained on this transformative journey toward mastery in React. "
           />
           <ResumeCard
-            title="Web Developer & Trainer"
+            title="Web Developer & Trainee"
             subTitle="Hopiant Pvt. Ltd - (July/2022 - Jan/2023)"
             result="Junagadh"
-            des="At Hopiant get training in javaScript, Javasacript ES6, Jquery, Shopify-hydrogen, Tailwind CSS and React-Js And also worked on live projects as part of development teams."
+            des="At Hopiant i got training in javaScript, Javasacript ES6, Jquery, Shopify-hydrogen, Tailwind CSS and React-Js And also worked on live projects as part of development teams."
           />
           <ResumeCard
             title="Internship "
