@@ -19,7 +19,7 @@ export default function FeatureModal({ title, des, icon, showModal, setShowModal
           <div
             className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none bg-[#000000d4] "
           >
-            <div className="relative w-auto my-6 mx-auto md:max-w-3xl bg-black border bg-gradient-to-r rounded-lg sm:max-w-sm">
+            <div className="relative w-auto my-6 md:max-w-3xl bg-black border bg-gradient-to-r rounded-lg sm:max-w-sm mx-5 responsive-menu">
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-black outline-none focus:outline-none">
                 {/*header*/}
