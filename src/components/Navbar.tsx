@@ -61,6 +61,7 @@ const Navbar = () => {
               </div>
               <ul className="flex flex-col gap-4">
                 {navLinksdata.map((item) => (
+                  <>
                   <li
                     key={item._id}
                     className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
@@ -77,7 +78,18 @@ const Navbar = () => {
                       {item.title}
                     </Link>
                   </li>
+                  </>
                 ))}
+                <li
+                  key={"CV"}
+                  className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
+                >
+                  <a  href={CV} download className="">
+              <span className=""></span>
+              <span className="relative w-full text-left text-[#00ff00] transition-colors duration-200 ease-in-out group-hover:text-black">Download CV</span>
+            </a>
+
+                </li>
               </ul>
               <div className="flex flex-col gap-4">
                 <h2 className="text-base uppercase font-titleFont mb-4">
