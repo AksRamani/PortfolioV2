@@ -46,55 +46,6 @@
   background: #1f1f1f !important;
 }
 
-  .bounce {
-    animation: bounce 2s ease infinite;
-  }
-@keyframes bounce {
-  70% { transform:translateY(0%); }
-  80% { transform:translateY(-15%); }
-  90% { transform:translateY(0%); }
-  95% { transform:translateY(-7%); }
-  97% { transform:translateY(0%); }
-  99% { transform:translateY(-3%); }
-  100% { transform:translateY(0); }
-}
-.bounce2 {
-  animation: bounce 4s ease infinite;
-}
-@keyframes bounce {
-70% { transform:translateY(0%); }
-80% { transform:translateY(-15%); }
-90% { transform:translateY(0%); }
-95% { transform:translateY(-7%); }
-97% { transform:translateY(0%); }
-99% { transform:translateY(-3%); }
-100% { transform:translateY(0); }
-}
-.bounce3 {
-  animation: bounce 6s ease infinite;
-}
-@keyframes bounce {
-70% { transform:translateY(0%); }
-80% { transform:translateY(-15%); }
-90% { transform:translateY(0%); }
-95% { transform:translateY(-7%); }
-97% { transform:translateY(0%); }
-99% { transform:translateY(-3%); }
-100% { transform:translateY(0); }
-}
-.bounce4 {
-  animation: bounce 8s ease infinite;
-}
-@keyframes bounce {
-70% { transform:translateY(0%); }
-80% { transform:translateY(-15%); }
-90% { transform:translateY(0%); }
-95% { transform:translateY(-7%); }
-97% { transform:translateY(0%); }
-99% { transform:translateY(-3%); }
-100% { transform:translateY(0); }
-}
-
 .slick-dots{
   display: none;
 }
