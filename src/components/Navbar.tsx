@@ -62,7 +62,7 @@ const Navbar = () => {
           <FiMenu />
         </span>
         {showMenu && (
-          <div className="w-screen h-screen mdl:hidden overflow-scroll absolute top-0 left-0 bg-[#000] p-4 scrollbar-hide">
+          <div className="w-screen m-header mdl:hidden overflow-scroll absolute top-0 left-0 bg-[#000] p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 pb-2 relative">
               <div className="mt-[13px]">
                 <img src={logo3} alt="logo" height={"80PX"} width={"100PX"} />

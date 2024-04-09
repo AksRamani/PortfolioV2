@@ -2,8 +2,8 @@ import "../style/marquee.css"
 
 const Slider = () => {
   return (
-    <div className="">
-    <div className="relative flex overflow-x-hidden overflow-y-hidden border-t border-b translate-y-1/2 rotate-[-5deg] mb-14">
+    <div className="animate-marquee-main">
+    <div className="flex overflow-x-hidden overflow-y-hidden border-t border-b translate-y-1/2 rotate-[-5deg] mb-14">
     <div className="py-5 animate-marquee whitespace-nowrap ">
       <span className="text-[40px] pl-[200px]" >"Code with heart, shine with Tailwind." </span>
       <span className="text-[40px] pl-[200px] text-[#00ff00]">Ⓐ </span>
