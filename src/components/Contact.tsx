@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import ContactLeft from "./ContactLeft";
 import Title from "./Title";
@@ -47,6 +47,23 @@ const Contact = () => {
       setMessage("");
     }
   };
+
+  useEffect(() => {
+    if (successMsg) {
+      setTimeout(() => {
+        setSuccessMsg("");
+      }, 2000);
+    }
+  }, [successMsg])
+
+  useEffect(() => {
+    if (errMsg) {
+      setTimeout(() => {
+        setErrMsg("");
+      }, 2000);
+    }
+  }, [errMsg])
+  
   return (
     <section
       id="contact"
