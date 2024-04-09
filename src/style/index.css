@@ -94,24 +94,7 @@
 99% { transform:translateY(-3%); }
 100% { transform:translateY(0); }
 }
-@media screen and (max-width: 375px) {
-   .font-bodyFont{
-    overflow-y: auto;  
-  }
-  .responsiv-footer{
-    text-align: center;
-    row-gap: 30px;
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 676px) {
-  .height-box{
-    height: 100% !important;
-  }
-  .responsive-menu{
-    align-items: flex-start !important;
-  }
-}
+
 .slick-dots{
   display: none;
 }
@@ -122,6 +105,11 @@
   -webkit-animation-duration: 2.5s;
   animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
+}
+.animate-marquee-main{
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 49vw) !important;
+  max-width: 1000%;
 }
 
 @keyframes tossing {
@@ -222,3 +210,32 @@
     opacity: 1;
   }
 }
+@media screen and (max-width: 1060px) {
+  .animate-marquee-main{
+    margin-right: calc(50% - 47vw) !important;
+  }
+  }
+@media screen and (max-width: 375px) {
+  .m-header{
+    min-height: calc(100vh - -500px);
+  }
+ .responsiv-footer{
+   text-align: center;
+   row-gap: 30px;
+   flex-direction: column;
+ }
+}
+@media screen and (max-width: 676px) {
+ .height-box{
+   height: 100% !important;
+ }
+ .responsive-menu{
+   align-items: flex-start !important;
+ }
+}
+@media screen and (max-width: 400px) {
+  .bannerIcon{
+    width: 50px;
+    height: 50px;
+  }
+  }
