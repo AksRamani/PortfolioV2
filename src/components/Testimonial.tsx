@@ -84,9 +84,9 @@ const Testimonial = () => {
                   />
                   <div className="w-full flex flex-col justify-end">
                     <p className="text-xs uppercase text-designColor tracking-wide mb-2">
-                      Bound - Trolola
+                    CodeCraft Innovations
                     </p>
-                    <h3 className="text-2xl font-bold">Jone Duone Joe</h3>
+                    <h3 className="text-2xl font-bold">Emily Smith</h3>
                     <p className="text-base tracking-wide text-gray-500">
                       Operation Officer
                     </p>
@@ -97,7 +97,7 @@ const Testimonial = () => {
                     <div className="flex flex-col justify-between lgl:items-center py-6 border-b-2 border-b-[#0000]">
                       <div>
                         <h3 className="text-xl lgl:text-2xl font-medium tracking-wide">
-                          Travel Mobile App Design.
+                        GAME STORE
                         </h3>
                         <p className="text-base text-gray-400 mt-3">
                           via Upwork - Mar 4, 2015 - Aug 30, 2021 test
@@ -108,7 +108,9 @@ const Testimonial = () => {
                         <RiStarFill />
                         <RiStarFill />
                         <RiStarFill />
+                      <div className="text-white gap-1">
                         <RiStarFill />
+                      </div>
                       </div>
                     </div>
                     <p className="text-base font-titleFont text-gray-400 font-medium tracking-wide leading-6">
@@ -134,9 +136,9 @@ const Testimonial = () => {
                   />
                   <div className="w-full flex flex-col justify-end">
                     <p className="text-xs uppercase text-designColor tracking-wide mb-2">
-                      Bound - Trolola
+                    ByteTech Solutions - Trolola
                     </p>
-                    <h3 className="text-2xl font-bold">Jone Duone Joe</h3>
+                    <h3 className="text-2xl font-bold">Michael Williams</h3>
                     <p className="text-base tracking-wide text-gray-500">
                       Operation Officer
                     </p>
@@ -147,7 +149,7 @@ const Testimonial = () => {
                     <div className="flex flex-col justify-between lgl:items-center py-6 border-b-2 border-b-[#0000]">
                       <div>
                         <h3 className="text-xl lgl:text-2xl font-medium tracking-wide">
-                          Travel Mobile App Design.
+                        QR CODE GENERATOR
                         </h3>
                         <p className="text-base text-gray-400 mt-3">
                           via Upwork - Mar 4, 2015 - Aug 30, 2021 test
@@ -186,7 +188,7 @@ const Testimonial = () => {
                     <p className="text-xs uppercase text-designColor tracking-wide mb-2">
                       Bound - Trolola
                     </p>
-                    <h3 className="text-2xl font-bold">Jone Duone Joe</h3>
+                    <h3 className="text-2xl font-bold">Sarah Johnson</h3>
                     <p className="text-base tracking-wide text-gray-500">
                       Operation Officer
                     </p>
@@ -197,7 +199,7 @@ const Testimonial = () => {
                     <div className="flex flex-col justify-between lgl:items-center py-6 border-b-2 border-b-[#0000]">
                       <div>
                         <h3 className="text-xl lgl:text-2xl font-medium tracking-wide">
-                          Travel Mobile App Design.
+                        SKY-CAST
                         </h3>
                         <p className="text-base text-gray-400 mt-3">
                           via Upwork - Mar 4, 2015 - Aug 30, 2021 test
