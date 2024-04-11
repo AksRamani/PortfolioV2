@@ -25,29 +25,34 @@ const Projects = () => {
             title="TODO App"
             des="Basic to TODO Project where user can add, edit or delete their tasks or list or any other information."
             src={todo}
+            link={"https://to-do-aksramani.vercel.app"}
           />
           <ProjectsCard
             title="User Details"
             des="using json placeholder user API create a basic user details project to see the details of listed users."
             src={userlist}
+            link={"https://user-react-app.vercel.app/"}
 
           />
           <ProjectsCard
             title="Game Store"
             des="simple react app for view games details, categories, prices, and other details."
             src={gamestore}
+            link={""}
 
           />
           <ProjectsCard
             title="QR code generator"
             des="create a QR code of any url and change the color of QR code, user can download the QR code."
             src={qr}
+            link={"https://qr-generator-aksramanis-projects.vercel.app"}
 
           />
           <ProjectsCard
             title="sky-cast"
             des="sky-cast is weather application, user can search any city and see the details of the weather."
             src={skycast}
+            link={"https://sky-cast-alpha.vercel.app/"}
 
           />
         </div>
