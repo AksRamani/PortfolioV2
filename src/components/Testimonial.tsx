@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 import Slider from "react-slick";
 import { RiStarFill } from "react-icons/ri";
@@ -96,14 +97,11 @@ const Testimonial = () => {
                   <div className="w-full h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] rounded-lg shadow-shadowOne p-4 lgl:p-8 flex flex-col justify-center gap-4 lgl:gap-8">
                     <div className="flex flex-col justify-between lgl:items-center py-6 border-b-2 border-b-[#0000]">
                       <div>
+                        <div className="d-flex flex justify-between">
                         <h3 className="text-xl lgl:text-2xl font-medium tracking-wide">
                         GAME STORE
                         </h3>
-                        <p className="text-base text-gray-400 mt-3">
-                          via Upwork - Mar 4, 2015 - Aug 30, 2021 test
-                        </p>
-                      </div>
-                      <div className="text-yellow-500 flex gap-1">
+                        <div className="text-yellow-500 flex gap-1">
                         <RiStarFill />
                         <RiStarFill />
                         <RiStarFill />
@@ -112,6 +110,12 @@ const Testimonial = () => {
                         <RiStarFill />
                       </div>
                       </div>
+                        </div>
+                        <p className="text-base text-gray-400 mt-3">
+                          via Upwork - Mar 4, 2015 - Aug 30, 2021 test
+                        </p>
+                      </div>
+                     
                     </div>
                     <p className="text-base font-titleFont text-gray-400 font-medium tracking-wide leading-6">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -148,20 +152,23 @@ const Testimonial = () => {
                   <div className="w-full h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] rounded-lg shadow-shadowOne p-4 lgl:p-8 flex flex-col justify-center gap-4 lgl:gap-8">
                     <div className="flex flex-col justify-between lgl:items-center py-6 border-b-2 border-b-[#0000]">
                       <div>
+                        <div className="d-flex flex justify-between">
                         <h3 className="text-xl lgl:text-2xl font-medium tracking-wide">
-                        QR CODE GENERATOR
+                        QR GENERATOR
                         </h3>
+                        <div className="text-yellow-500 flex gap-1">
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarFill />
+                      </div>
+                        </div>
                         <p className="text-base text-gray-400 mt-3">
                           via Upwork - Mar 4, 2015 - Aug 30, 2021 test
                         </p>
                       </div>
-                      <div className="text-yellow-500 flex gap-1">
-                        <RiStarFill />
-                        <RiStarFill />
-                        <RiStarFill />
-                        <RiStarFill />
-                        <RiStarFill />
-                      </div>
+                      
                     </div>
                     <p className="text-base font-titleFont text-gray-400 font-medium tracking-wide leading-6">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -198,20 +205,23 @@ const Testimonial = () => {
                   <div className="w-full h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] rounded-lg shadow-shadowOne p-4 lgl:p-8 flex flex-col justify-center gap-4 lgl:gap-8">
                     <div className="flex flex-col justify-between lgl:items-center py-6 border-b-2 border-b-[#0000]">
                       <div>
+                        <div className="d-flex flex justify-between">
                         <h3 className="text-xl lgl:text-2xl font-medium tracking-wide">
                         SKY-CAST
                         </h3>
+                        <div className="text-yellow-500 flex gap-1">
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarFill />
+                      </div>
+                        </div>
                         <p className="text-base text-gray-400 mt-3">
                           via Upwork - Mar 4, 2015 - Aug 30, 2021 test
                         </p>
                       </div>
-                      <div className="text-yellow-500 flex gap-1">
-                        <RiStarFill />
-                        <RiStarFill />
-                        <RiStarFill />
-                        <RiStarFill />
-                        <RiStarFill />
-                      </div>
+
                     </div>
                     <p className="text-base font-titleFont text-gray-400 font-medium tracking-wide leading-6">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
