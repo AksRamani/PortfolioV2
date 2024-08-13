@@ -21,8 +21,9 @@ const Contact = () => {
   };
   // ========== Email Validation end here ================
 
-  const handleSend = (e: any) => {
-    e.preventDefault();
+
+  const onSubmit = async(event :any) => {
+    event.preventDefault();
     if (username === "") {
       setErrMsg("Username is required!");
     } else if (phoneNumber === "") {
@@ -36,17 +37,63 @@ const Contact = () => {
     } else if (message === "") {
       setErrMsg("Message is required!");
     } else {
-      setSuccessMsg(
-        `Thank you dear ${username}, Your Messages has been sent Successfully!`
-      );
-      setErrMsg("");
-      setUsername("");
-      setPhoneNumber("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
+      const formData = new FormData(event.target);
+  
+      formData.append("access_key", "bb2a42ed-a008-4c28-844d-03d9cfe69306");
+  
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+  
+      const data = await response.json();
+      console.log(data.success)
+      if (data.success) {
+        setSuccessMsg(
+          `Thank you dear ${username}, Your Messages has been sent Successfully!`
+        );
+        setErrMsg("");
+        setUsername("");
+        setPhoneNumber("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+        event.target.reset();
+      } else {
+        console.log("Error", data);
+      }
+      
     }
-  };
+  }
+
+  // const handleSend = (e: any) => {
+  //   e.preventDefault();
+  //   console.log("e",e.target)
+  //   if (username === "") {
+  //     setErrMsg("Username is required!");
+  //   } else if (phoneNumber === "") {
+  //     setErrMsg("Phone number is required!");
+  //   } else if (email === "") {
+  //     setErrMsg("Please give your Email!");
+  //   } else if (!emailValidation(email)) {
+  //     setErrMsg("Give a valid Email!");
+  //   } else if (subject === "") {
+  //     setErrMsg("Plese give your Subject!");
+  //   } else if (message === "") {
+  //     setErrMsg("Message is required!");
+  //   } else {
+  //     handleSubmit(e)
+  //     setSuccessMsg(
+  //       `Thank you dear ${username}, Your Messages has been sent Successfully!`
+  //     );
+  //     setErrMsg("");
+  //     setUsername("");
+  //     setPhoneNumber("");
+  //     setEmail("");
+  //     setSubject("");
+  //     setMessage("");
+  //   }
+  // };
 
   useEffect(() => {
     if (successMsg) {
@@ -77,7 +124,18 @@ const Contact = () => {
           <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
             <ContactLeft />
             <div className="w-full lgl:w-[60%] h-full py-10 bg-gradient-to-r from-[#0B1120] to-[#0B1120] flex flex-col gap-8 p-4 lgl:p-8 rounded-lg shadow-shadowOne lgl:mt-0 mt-8">
-              <form className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5">
+            <div>
+      {/* <form onSubmit={onSubmit}>
+        <input type="text" name="name" required/>
+        <input type="email" name="email" required/>
+        <textarea name="message" required></textarea>
+
+        <button type="submit">Submit Form</button>
+
+      </form> */}
+
+    </div>
+              <form className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5" onSubmit={onSubmit}>
                 {errMsg && (
                   <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-orange-500 text-base tracking-wide animate-bounce">
                     {errMsg}
@@ -101,6 +159,7 @@ const Contact = () => {
                         "outline-designColor"
                       } contactInput`}
                       type="text"
+                      name="name"
                     />
                   </div>
                   <div className="w-full lgl:w-1/2 flex flex-col gap-4">
@@ -115,6 +174,7 @@ const Contact = () => {
                         "outline-designColor"
                       } contactInput`}
                       type="text"
+                      name="phoneNumber"
                     />
                   </div>
                 </div>
@@ -124,6 +184,7 @@ const Contact = () => {
                   </p>
                   <input
                     onChange={(e) => setEmail(e.target.value)}
+                    name="email"
                     value={email}
                     className={`${
                       errMsg === "Please give your Email!" &&
@@ -144,6 +205,7 @@ const Contact = () => {
                       "outline-designColor"
                     } contactInput`}
                     type="text"
+                    name="sub"
                   />
                 </div>
                 <div className="flex flex-col gap-4">
@@ -158,11 +220,13 @@ const Contact = () => {
                     } contactTextArea`}
                     cols={30}
                     rows={8}
+                    name="message"
                   ></textarea>
                 </div>
                 <div className="w-full">
                   <button
-                    onClick={handleSend}
+                    // onClick={handleSend}
+                    type="submit"
                     className="w-full h-12 bg-[#141518] rounded-lg text-base text-green-600 tracking-wider uppercase hover:text-green-400 duration-300 hover:border-[1px] hover:border-green-400 border-green-600 border"
                   >
                     Send Message
