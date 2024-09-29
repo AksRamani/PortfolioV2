@@ -10,7 +10,7 @@ const RightBanner = () => {
         src={photo}
         alt="bannerImg"
       />
-      <div className="absolute bottom-0 w-[350px] h-[300px] lgl:w-[500px] lgl:h-[500px] bg-gradient-to-r from-[#1e2024] to-[#0B1120] shadow-shadowOne flex justify-center items-center"></div>
+      <div className="absolute bottom-0 w-[350px] h-[450px] lgl:w-[500px] lgl:h-[725px] bg-gradient-to-r from-[#1e2024] to-[#0B1120] shadow-shadowOne flex justify-center items-center -mb-[25px]"></div>
     </FadeIn>
   );
 };
