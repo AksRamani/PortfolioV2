@@ -11,7 +11,7 @@ import Skills from "./components/Skills";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [scrollDirection, setScrollDirection] = useState('');
+  const [scrollDirection, setScrollDirection] = useState('Scrolling up');
 
   useEffect(() => {
       let lastScrollTop = 0;
