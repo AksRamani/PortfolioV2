@@ -1,14 +1,10 @@
 import { useEffect, useState } from "react";
-
 import ContactLeft from "./ContactLeft";
 import Title from "./Title";
 import { FadeIn } from "./FadeIn";
-import * as mouseEventHandling from "../helperFiles/mouseeventHandling.js"
 
 
 const Contact = () => {
-
-  const {handleMouseEnter, handleMouseLeave } = mouseEventHandling;
   
   const [username, setUsername] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -27,6 +23,7 @@ const Contact = () => {
   // ========== Email Validation end here ================
 
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onSubmit = async(event :any) => {
     event.preventDefault();
     if (username === "") {
@@ -70,34 +67,15 @@ const Contact = () => {
     }
   }
 
-  // const handleSend = (e: any) => {
-  //   e.preventDefault();
-  //   console.log("e",e.target)
-  //   if (username === "") {
-  //     setErrMsg("Username is required!");
-  //   } else if (phoneNumber === "") {
-  //     setErrMsg("Phone number is required!");
-  //   } else if (email === "") {
-  //     setErrMsg("Please give your Email!");
-  //   } else if (!emailValidation(email)) {
-  //     setErrMsg("Give a valid Email!");
-  //   } else if (subject === "") {
-  //     setErrMsg("Plese give your Subject!");
-  //   } else if (message === "") {
-  //     setErrMsg("Message is required!");
-  //   } else {
-  //     handleSubmit(e)
-  //     setSuccessMsg(
-  //       `Thank you dear ${username}, Your Messages has been sent Successfully!`
-  //     );
-  //     setErrMsg("");
-  //     setUsername("");
-  //     setPhoneNumber("");
-  //     setEmail("");
-  //     setSubject("");
-  //     setMessage("");
-  //   }
-  // };
+  const handleMouseEnter = () =>{
+    const cursor = document.querySelector('.cursor');
+    cursor?.classList.add('cursor-active');
+
+  }
+const handleMouseLeave = () =>{
+    const cursor = document.querySelector('.cursor');
+    cursor?.classList.remove('cursor-active');
+  }
 
   useEffect(() => {
     if (successMsg) {

@@ -3,12 +3,10 @@ import { FaLinkedinIn, FaReact, FaHtml5, FaGithub } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { FadeIn } from "./FadeIn";
 import { IoLogoJavascript } from "react-icons/io5";
-import * as mouseEventHandling from "../helperFiles/mouseeventHandling.js"
 
 
 const LeftBanner = () => {
 
-  const {handleMouseEnter, handleMouseLeave } = mouseEventHandling;
 
   const [text] = useTypewriter({
     words: ["Professional Coder.", "Web Developer."],
@@ -17,6 +15,17 @@ const LeftBanner = () => {
     deleteSpeed: 10,
     delaySpeed: 2000,
   });
+
+  const handleMouseEnter = () =>{
+    const cursor = document.querySelector('.cursor');
+    cursor?.classList.add('cursor-active');
+
+  }
+const handleMouseLeave = () =>{
+    const cursor = document.querySelector('.cursor');
+    cursor?.classList.remove('cursor-active');
+  }
+
   return (
     <FadeIn className="w-full lgl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5">
