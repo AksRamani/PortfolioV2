@@ -1,3 +1,4 @@
+ console.log("js called")
 function createSticker(obj) {
     const btns = document.querySelectorAll(".sticky_w");
     const texts = document.querySelectorAll(".sticky_t");
