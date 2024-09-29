@@ -1,5 +1,6 @@
 import { CiGlobe } from "react-icons/ci";
 import { BsGithub } from "react-icons/bs";
+import * as mouseEventHandling from "../helperFiles/mouseeventHandling.js"
 
 
 interface Props {
@@ -10,6 +11,8 @@ interface Props {
 }
 
 const ProjectsCard = ({ title, des, src, link }: Props) => {
+  const {handleMouseEnter, handleMouseLeave } = mouseEventHandling;
+
   return (
     <div className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 hover:gray-900 transition-colors duration-1000">
       <a className="w-full h-[80%] overflow-hidden rounded-lg" onClick={()=>{
@@ -28,12 +31,24 @@ const ProjectsCard = ({ title, des, src, link }: Props) => {
               {title}
             </h3>
             <div className="flex gap-2">
-              <a href="https://github.com/AksRamani" target="_blank">
+              <a href="https://github.com/AksRamani" target="_blank"
+                 onMouseEnter={()=>{
+                  handleMouseEnter();
+                }}
+                onMouseLeave={()=>{
+                  handleMouseLeave();
+                }}>
                 <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
                   <BsGithub />
                 </span>
               </a>
-              <a href={link} target="_blank">
+              <a href={link} target="_blank"
+                 onMouseEnter={()=>{
+                  handleMouseEnter();
+                }}
+                onMouseLeave={()=>{
+                  handleMouseLeave();
+                }}>
                 <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
                   <CiGlobe />
                 </span>
