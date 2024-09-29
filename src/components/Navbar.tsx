@@ -6,13 +6,22 @@ import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { logo3 } from "../assets";
 import { navLinksdata } from "../constants";
 import CV from "../assets/images/Aakash_Ramani_Resume.pdf"
-import * as mouseEventHandling from '../helperFiles/mouseeventHandling.js';
 
 
 const Navbar = () => {
-  const {handleMouseEnter, handleMouseLeave } = mouseEventHandling;
 
   const [showMenu, setShowMenu] = useState(false);
+
+  const handleMouseEnter = () =>{
+    const cursor = document.querySelector('.cursor');
+    cursor?.classList.add('cursor-active');
+
+  }
+const handleMouseLeave = () =>{
+    const cursor = document.querySelector('.cursor');
+    cursor?.classList.remove('cursor-active');
+  }
+  
   return (
     <div className="w-full h-24 sticky top-0 z-50 backdrop-blur-2xl transition-colors bg-bodyColor/70 mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 px-4">
       <div>

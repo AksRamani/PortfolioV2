@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { HiArrowRight } from "react-icons/hi";
 import FeatureModal from "./FeatureModal";
-import * as mouseEventHandling from "../helperFiles/mouseeventHandling.js"
 
 interface Props {
   title: string;
@@ -10,9 +9,20 @@ interface Props {
 }
 
 const Card = ({ title, des, icon }: Props) => {
-  const {handleMouseEnter, handleMouseLeave } = mouseEventHandling;
 
   const [showModal, setshowModal] = useState(false);
+
+  const handleMouseEnter = () =>{
+    const cursor = document.querySelector('.cursor');
+    cursor?.classList.add('cursor-active');
+
+  }
+const handleMouseLeave = () =>{
+    const cursor = document.querySelector('.cursor');
+    cursor?.classList.remove('cursor-active');
+  }
+
+  
   useEffect(() => {
     if (!showModal) {
       document.body.classList.remove("overflow-hidden");

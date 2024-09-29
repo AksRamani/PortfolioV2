@@ -1,8 +1,13 @@
-import * as mouseEventHandling from '../helperFiles/mouseeventHandling.js';
-
 const Footer = () => {
-  const {handleMouseEnter, handleMouseLeave } = mouseEventHandling;
+  const handleMouseEnter = () =>{
+    const cursor = document.querySelector('.cursor');
+    cursor?.classList.add('cursor-active');
 
+  }
+const handleMouseLeave = () =>{
+    const cursor = document.querySelector('.cursor');
+    cursor?.classList.remove('cursor-active');
+  }
   return (
     <>
       <div className="w-full py-7  md:flex text-center justify-between h-auto border-b-[1px] border-b-black footer-transform  responsiv-footer">
