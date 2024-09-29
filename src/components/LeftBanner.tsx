@@ -3,9 +3,13 @@ import { FaLinkedinIn, FaReact, FaHtml5, FaGithub } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { FadeIn } from "./FadeIn";
 import { IoLogoJavascript } from "react-icons/io5";
+import * as mouseEventHandling from "../helperFiles/mouseeventHandling.js"
 
 
 const LeftBanner = () => {
+
+  const {handleMouseEnter, handleMouseLeave } = mouseEventHandling;
+
   const [text] = useTypewriter({
     words: ["Professional Coder.", "Web Developer."],
     loop: true,
@@ -34,19 +38,26 @@ const LeftBanner = () => {
             Find me in
           </h2>
           <div className="flex gap-4">
-            <a href="https://github.com/AksRamani" target="_blank">
+            <a href="https://github.com/AksRamani" target="_blank"
+            onMouseEnter={()=>{
+              handleMouseEnter();
+            }}
+            onMouseLeave={()=>{
+              handleMouseLeave();
+            }}>
               <span className="bannerIcon">
                 <FaGithub />
               </span>
             </a>
-            {/* <a href="https://www.youtube.com/@reactjsBD" target="_blank">
-              <span className="bannerIcon">
-                <FaInstagram />
-              </span>
-            </a> */}
             <a
               href="https://www.linkedin.com/in/aakash-ramani-541321235/"
               target="_blank"
+              onMouseEnter={()=>{
+                handleMouseEnter();
+              }}
+              onMouseLeave={()=>{
+                handleMouseLeave();
+              }}
             >
               <span className="bannerIcon">
                 <FaLinkedinIn />

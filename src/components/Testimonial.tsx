@@ -6,13 +6,23 @@ import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import Title from "./Title";
 import {  p1, p2, p3 } from "../assets";
 import { FadeIn } from "./FadeIn";
+import * as mouseEventHandling from "../helperFiles/mouseeventHandling.js"
+
 
 function SampleNextArrow(props: any) {
   const { onClick } = props;
+  const {handleMouseEnter, handleMouseLeave } = mouseEventHandling;
+
   return (
     <div
       className="w-14 h-12  bg-[#161616] hover:bg-black duration-300 rounded-md text-2xl border-[#2C2C2F] border text-gray-400 flex justify-center items-center mt-2 absolute bottom-[-60px] right-0 shadow-shadowOne cursor-pointer z-10"
       onClick={onClick}
+      onMouseEnter={()=>{
+        handleMouseEnter();
+      }}
+      onMouseLeave={()=>{
+        handleMouseLeave();
+      }}
     >
       <HiArrowRight />
     </div>
@@ -21,10 +31,18 @@ function SampleNextArrow(props: any) {
 
 function SamplePrevArrow(props: any) {
   const { onClick } = props;
+  const {handleMouseEnter, handleMouseLeave } = mouseEventHandling;
+  
   return (
     <div
       className="w-14 h-12 bg-[#161616] hover:bg-black duration-300 rounded-md text-2xl border-[#2C2C2F] border text-gray-400 flex justify-center items-center mt-2 absolute bottom-[-60px] right-20 shadow-shadowOne cursor-pointer z-10"
       onClick={onClick}
+      onMouseEnter={()=>{
+        handleMouseEnter();
+      }}
+      onMouseLeave={()=>{
+        handleMouseLeave();
+      }}
     >
       <HiArrowLeft />
     </div>

@@ -197,3 +197,120 @@
     height: 80px;
   }
   }
+
+  .snip1226 * {
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .snip1226 li {
+    display: inline-block;
+    list-style: outside none none;
+    /* margin: 0 1.5em; */
+    overflow: hidden;
+  }
+  .snip1226 a {
+    padding: 0.3em 0;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+  }
+  .snip1226 a:before,
+  .snip1226 a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .snip1226 a:before {
+    bottom: 100%;
+    display: block;
+    height: 3px;
+    width: 100%;
+    content: "";
+    background-color: #00ff00;
+  }
+  .snip1226 a:after {
+    padding: 0.3em 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    content: attr(data-hover);
+    color: white;
+    white-space: nowrap;
+  }
+  .snip1226 li:hover a,
+  .snip1226 .current a {
+    transform: translateY(100%);
+  }
+  
+  .snip1226 a.active{
+    color: #ffffff;
+    border-bottom: 2px solid #00ff00;
+  }
+
+  .cursor-active {
+    -webkit-transform: translate(-50%, -50%) scale(8);
+    -ms-transform: translate(-50%, -50%) scale(8);
+    transform: translate(-50%, -50%) scale(8);
+    opacity: .1;
+  }
+
+  .social-text .rolling-text {
+    line-height: 30px;
+    height: 30px;
+  }
+
+  .button {
+    padding: 30px 50px;
+    border: 5px solid black;
+    transition: 0.2s ease;
+    margin-top: 50px;
+    cursor: pointer;
+    width: 200px;
+  }
+  .button_text {
+    font-family: Montserrat;
+    font-size: 18px;
+    /* font-weight: bold; */
+    /* pointer-events: none; */
+    cursor: pointer !important;
+  }
+  .button_text a{
+    cursor: pointer;
+  }
+  .button:hover {
+    background: #4affe4;
+  }
+
+  .hover-this .hover-anim {
+    pointer-events: none;
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: -webkit-transform 0.2s linear;
+    -o-transition: transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  }
+  .cursor {
+    pointer-events: none;
+    position: fixed;
+    padding: 0.3rem;
+    background-color: #fff;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    -webkit-transition: opacity 0.4s ease, -webkit-transform 0.3s ease;
+    transition: opacity 0.4s ease, -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease, opacity 0.4s ease;
+    transition: transform 0.3s ease, opacity 0.4s ease;
+    transition: transform 0.3s ease, opacity 0.4s ease, -webkit-transform 0.3s ease;
+    z-index: 99999;
+  }
+  
+  .cursor-active {
+    -webkit-transform: translate(-50%, -50%) scale(8);
+    -ms-transform: translate(-50%, -50%) scale(8);
+    transform: translate(-50%, -50%) scale(8);
+    opacity: .1;
+  }

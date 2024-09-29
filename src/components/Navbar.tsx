@@ -6,10 +6,13 @@ import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { logo3 } from "../assets";
 import { navLinksdata } from "../constants";
 import CV from "../assets/images/Aakash_Ramani_Resume.pdf"
+import * as mouseEventHandling from '../helperFiles/mouseeventHandling.js';
+
 
 const Navbar = () => {
+  const {handleMouseEnter, handleMouseLeave } = mouseEventHandling;
+
   const [showMenu, setShowMenu] = useState(false);
-  console.log("")
   return (
     <div className="w-full h-24 sticky top-0 z-50 backdrop-blur-2xl transition-colors bg-bodyColor/70 mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 px-4">
       <div>
@@ -21,18 +24,33 @@ const Navbar = () => {
           smooth={true}
           offset={-70}
           duration={800} 
-          id={"1001"}>
+          id={"1001"}
+          onMouseEnter={()=>{
+            handleMouseEnter();
+          }}
+          onMouseLeave={()=>{
+            handleMouseLeave();
+          }}
+          >
           <img src={logo3} alt="logo" height={"80PX"} width={"100PX"} />
         </Link>
       </div>
-      <div>
-        <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
+      <div className="flex gap-8 align-middle">
+      <div className="flex">
+        <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10 snip1226">
           {navLinksdata.map(({ _id, title, link }) => (
-            <li
+            <li              
               className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
               key={_id}
+              onMouseEnter={()=>{
+                handleMouseEnter();
+              }}
+              onMouseLeave={()=>{
+                handleMouseLeave();
+              }}
             >
               <Link
+                data-hover={title}
                 activeClass="active"
                 to={link}
                 spy={true}
@@ -45,12 +63,7 @@ const Navbar = () => {
             </li>
 
           ))}
-          <li className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-[14cf93] duration-300">
-            <a href={CV} download className="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-medium transition-all !bg-[#00fa00] rounded-full hover:bg-white group">
-              <span className="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-100 transition-all border-white rounded-full"></span>
-              <span className="relative w-full text-left transition-colors duration-200 ease-in-out text-black">Download CV</span>
-            </a>
-          </li>
+          
         </ul>
         <span
           onClick={() => {
@@ -139,6 +152,23 @@ const Navbar = () => {
             </div>
           </div>
         )}
+      </div>
+      <div>
+      <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10 ">
+        <li className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-[14cf93] duration-300"
+          onMouseEnter={()=>{
+            handleMouseEnter();
+          }}
+          onMouseLeave={()=>{
+            handleMouseLeave();
+          }}>
+            <a href={CV} download className="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-medium transition-all !bg-[#00fa00] rounded-full hover:bg-white group">
+              <span className="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-100 transition-all border-white rounded-full"></span>
+              <span className="relative w-full text-left transition-colors duration-200 ease-in-out text-black">Download CV</span>
+            </a>
+          </li>
+        </ul>
+      </div>
       </div>
     </div>
   );

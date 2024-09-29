@@ -3,8 +3,13 @@ import { useEffect, useState } from "react";
 import ContactLeft from "./ContactLeft";
 import Title from "./Title";
 import { FadeIn } from "./FadeIn";
+import * as mouseEventHandling from "../helperFiles/mouseeventHandling.js"
+
 
 const Contact = () => {
+
+  const {handleMouseEnter, handleMouseLeave } = mouseEventHandling;
+  
   const [username, setUsername] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
@@ -47,7 +52,6 @@ const Contact = () => {
       });
   
       const data = await response.json();
-      console.log(data.success)
       if (data.success) {
         setSuccessMsg(
           `Thank you dear ${username}, Your Messages has been sent Successfully!`
@@ -223,7 +227,13 @@ const Contact = () => {
                     name="message"
                   ></textarea>
                 </div>
-                <div className="w-full">
+                <div className="w-full"
+                onMouseEnter={()=>{
+                  handleMouseEnter();
+                }}
+                onMouseLeave={()=>{
+                  handleMouseLeave();
+                }}>
                   <button
                     // onClick={handleSend}
                     type="submit"

@@ -1,7 +1,9 @@
 import { FaFacebookF, FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 import {  contactus } from "../assets";
+import * as mouseEventHandling from "../helperFiles/mouseeventHandling.js"
 
 const ContactLeft = () => {
+  const {handleMouseEnter, handleMouseLeave } = mouseEventHandling;
   return (
     <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#0B1120] to-[#0B1120] p-4 lgl:p-8 rounded-lg shadow-shadowOne flex flex-col gap-8 justify-center">
       <img
@@ -28,7 +30,13 @@ const ContactLeft = () => {
       <div className="flex flex-col gap-4">
         <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
         <div className="flex gap-4">
-          <a href="https://github.com/AksRamani" target="_blank">
+          <a href="https://github.com/AksRamani" target="_blank"
+          onMouseEnter={()=>{
+            handleMouseEnter();
+          }}
+          onMouseLeave={()=>{
+            handleMouseLeave();
+          }}>
             <span className="bannerIcon">
               <FaGithub />
             </span>
@@ -36,17 +44,35 @@ const ContactLeft = () => {
           <a
             href="https://www.linkedin.com/in/aakash-ramani-541321235/"
             target="_blank"
+            onMouseEnter={()=>{
+              handleMouseEnter();
+            }}
+            onMouseLeave={()=>{
+              handleMouseLeave();
+            }}
           >
             <span className="bannerIcon">
               <FaLinkedinIn />
             </span>
           </a>
-          <a href="https://www.instagram.com/aks_ramani/" target="_blank">
+          <a href="https://www.instagram.com/aks_ramani/" target="_blank"
+          onMouseEnter={()=>{
+            handleMouseEnter();
+          }}
+          onMouseLeave={()=>{
+            handleMouseLeave();
+          }}>
             <span className="bannerIcon">
               <FaInstagram />
             </span>
           </a>
-          <a href="https://www.facebook.com/aakash.ramani.112?mibextid=ZbWKwL" target="_blank">
+          <a href="https://www.facebook.com/aakash.ramani.112?mibextid=ZbWKwL" target="_blank"
+          onMouseEnter={()=>{
+            handleMouseEnter();
+          }}
+          onMouseLeave={()=>{
+            handleMouseLeave();
+          }}>
             <span className="bannerIcon">
               <FaFacebookF />
             </span>

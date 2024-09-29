@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { HiArrowRight } from "react-icons/hi";
 import FeatureModal from "./FeatureModal";
+import * as mouseEventHandling from "../helperFiles/mouseeventHandling.js"
 
 interface Props {
   title: string;
@@ -9,6 +10,8 @@ interface Props {
 }
 
 const Card = ({ title, des, icon }: Props) => {
+  const {handleMouseEnter, handleMouseLeave } = mouseEventHandling;
+
   const [showModal, setshowModal] = useState(false);
   useEffect(() => {
     if (!showModal) {
@@ -39,7 +42,13 @@ const Card = ({ title, des, icon }: Props) => {
               {title}
             </h2>
             <p className="base overflow-hidden text-clip	 h-24">{des}</p>
-            <a href="#/" onClick={() =>(setshowModal(true))}>
+            <a href="#/" className="w-[15%]" onClick={() =>(setshowModal(true))}
+            onMouseEnter={()=>{
+              handleMouseEnter();
+            }}
+            onMouseLeave={()=>{
+              handleMouseLeave();
+            }}>
             <span className="text-2xl text-designColor">
               <HiArrowRight />
             </span>
