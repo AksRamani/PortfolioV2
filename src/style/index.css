@@ -187,6 +187,9 @@
  .responsive-menu{
    align-items: flex-start !important;
  }
+ .cursor{
+  display: none;
+ }
 }
 @media screen and (max-width: 450px) {
   .bannerIcon{
@@ -313,4 +316,16 @@
     -ms-transform: translate(-50%, -50%) scale(8);
     transform: translate(-50%, -50%) scale(8);
     opacity: .1;
+  }
+
+  .navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background-color: #333; Example background color */
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+  .navbar-hidden {
+    transform: translateY(-100%);
   }
