@@ -299,7 +299,7 @@
   .cursor {
     pointer-events: none;
     position: fixed;
-    padding: 0.3rem;
+    padding: 0.6rem;
     background-color: #fff;
     border-radius: 50%;
     mix-blend-mode: difference;
@@ -312,9 +312,9 @@
   }
   
   .cursor-active {
-    -webkit-transform: translate(-50%, -50%) scale(8);
-    -ms-transform: translate(-50%, -50%) scale(8);
-    transform: translate(-50%, -50%) scale(8);
+    -webkit-transform: translate(-50%, -50%) scale(5);
+    -ms-transform: translate(-50%, -50%) scale(5);
+    transform: translate(-50%, -50%) scale(5);
     opacity: .1;
   }
 
