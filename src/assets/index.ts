@@ -10,6 +10,7 @@ import p1 from "./images/images (1).jpeg"
 import p2 from "./images/AI-Portrait-400x400.jpg"
 import p3 from "./images/Portrait-Photography-400x400.jpg"
 import logo3 from "./images/logo3.svg"
+import taskTrail from "./images/projects/tasktrail.png"
 
 export {
   logo3,
@@ -23,5 +24,6 @@ export {
   p3,
   qr,
   skycast,
-  contactus
+  contactus,
+  taskTrail
 };
