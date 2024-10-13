@@ -4,7 +4,9 @@ import {  todo,
   userlist,
   gamestore,
   qr,
-  skycast } from "../assets";
+  skycast,
+  taskTrail
+ } from "../assets";
 import { FadeIn } from "./FadeIn";
 
 const Projects = () => {
@@ -53,6 +55,13 @@ const Projects = () => {
             des="sky-cast is weather application, user can search any city and see the details of the weather."
             src={skycast}
             link={"https://sky-cast-alpha.vercel.app/"}
+
+          />
+          <ProjectsCard
+            title="TaskTrail"
+            des="TaskTrail is a task management app,Add a new task,change status,delete and drag and drop to change status."
+            src={taskTrail}
+            link={"https://task-trail-git-main-aksramanis-projects.vercel.app/"}
 
           />
         </div>
