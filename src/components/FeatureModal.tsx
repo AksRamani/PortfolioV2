@@ -11,6 +11,17 @@ export default function FeatureModal({ title, des, icon, showModal, setShowModal
     useEffect(() => {
         document.body.classList.add("overflow-hidden");
     })
+
+    const handleMouseEnter = () =>{
+      const cursor = document.querySelector('.cursor');
+      cursor?.classList.add('cursor-active');
+  
+    }
+  const handleMouseLeave = () =>{
+      const cursor = document.querySelector('.cursor');
+      cursor?.classList.remove('cursor-active');
+    }
+  
     
   return (
     <>
@@ -30,6 +41,12 @@ export default function FeatureModal({ title, des, icon, showModal, setShowModal
                   </h3>
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-[#00ff00] float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                    onMouseEnter={()=>{
+                      handleMouseEnter();
+                    }}
+                    onMouseLeave={()=>{
+                      handleMouseLeave();
+                    }}
                     onClick={() => setShowModal(false)}
                   >
                     <span className="bg-transparent text-[#00ff00] h-6 w-6 block outline-none focus:outline-none text-4xl">

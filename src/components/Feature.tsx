@@ -1,5 +1,5 @@
 // import { FaMobile, FaGlobe } from "react-icons/fa";
-import { SiProgress, SiAntdesign } from "react-icons/si";
+import { SiProgress, SiAntdesign, SiShopify, SiCraftcms   } from "react-icons/si";
 import Card from "./Card";
 import Title from "./Title";
 import { FadeIn } from "./FadeIn";
@@ -29,6 +29,16 @@ const Feature = () => {
             title="UX Design"
             des="Blending the art of web development with the science of UX design, I specialize in creating websites that deliver a seamless user experience. Through thoughtful design and meticulous coding, I strive to create digital solutions that exceed expectations. Let's work together to build a website that not only looks beautiful but also engages your audience effectively."
             icon={<SiAntdesign />}
+          />
+          <Card
+            title="Shopify CMS Services"
+            des="I provide comprehensive Shopify CMS services, enabling seamless store management with customized product listings, optimized content, and efficient inventory control. My services ensure a user-friendly experience, streamlining updates and enhancing the overall store functionality for effective e-commerce performance."
+            icon={<SiShopify />}
+          />
+          <Card
+            title="Shopify CRO Services"
+            des="I provide Shopify CRO (Conversion Rate Optimization) services designed to maximize conversions and increase sales. Through data-driven strategies, I optimize your store’s layout, product pages, and checkout process to improve user experience and encourage customer actions. My approach ensures a smoother shopping journey, helping turn visitors into loyal customers."
+            icon={<SiCraftcms />}
           />
         </div>
       </FadeIn>
