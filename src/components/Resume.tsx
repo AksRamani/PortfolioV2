@@ -7,8 +7,6 @@ import { FadeIn } from "./FadeIn";
 
 const Resume = () => {
   const [educationData] = useState<Boolean>(true);
-  // const [experienceData, setExperienceData] = useState<Boolean>(true);
-  // const [achievementData, setAchievementData] = useState<Boolean>(true);
   return (
     <section
       id="resume"
@@ -19,73 +17,9 @@ const Resume = () => {
           <Title title="1+ YEARS OF EXPERIENCE" des="My Resume" />
         </div>
         <div>
-          {/* <ul className="w-full grid-cols-1 md:grid-cols-2 xl:grid-cols-4 hidden">
-            <li
-              onClick={() => {
-                setEducationData(true);
-                setSkillData(false);
-                setExperienceData(false);
-                setAchievementData(false);
-              }}
-              className={`${
-                educationData
-                  ? "border-designColor rounded-lg"
-                  : "border-transparent"
-              } resumeLi`}
-            >
-              Education
-            </li>
-            <li
-              onClick={() => {
-                setEducationData(false);
-                setSkillData(true);
-                setExperienceData(false);
-                setAchievementData(false);
-              }}
-              className={`${
-                skillData
-                  ? "border-designColor rounded-lg"
-                  : "border-transparent"
-              } resumeLi`}
-            >
-              Professional Skills
-            </li>
-            <li
-              onClick={() => {
-                setEducationData(false);
-                setSkillData(false);
-                setExperienceData(true);
-                setAchievementData(false);
-              }}
-              className={`${
-                experienceData
-                  ? "border-designColor rounded-lg"
-                  : "border-transparent"
-              } resumeLi`}
-            >
-              Experience
-            </li>
-            <li
-              onClick={() => {
-                setEducationData(false);
-                setSkillData(false);
-                setExperienceData(false);
-                setAchievementData(true);
-              }}
-              className={`${
-                achievementData
-                  ? "border-designColor rounded-lg"
-                  : "border-transparent"
-              } resumeLi`}
-            >
-              Achievements
-            </li>
-          </ul> */}
         </div>
         {educationData && <Education />}
-        {/* {skillData && <Skills />} */}
-        {/* {achievementData && <Achievement />}
-        {experienceData && <Experience />} */}
+        
       </FadeIn>
     </section>
   );
