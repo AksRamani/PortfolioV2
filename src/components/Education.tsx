@@ -43,12 +43,12 @@ const Education = () => {
           <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] height-box border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10 text-justify">
-          <ResumeCard
+          {/* <ResumeCard
             title="Co - Founder"
             subTitle="Codegrin Technologies - (November/2024 - Present)"
             result="Rajkot"
-            des="As Co-founder of Codegrin Technologies, I am dedicated to driving innovation and delivering cutting-edge technological solutions that empower businesses to thrive. My role involves shaping the company's vision, building strategic partnerships, and leading teams to create impactful products and services. At Codegrin Technologies, our mission is to redefine excellence in technology and provide seamless experiences for our clients."
-          />
+            des="As frontend developer at Codegrin Technologies, I am dedicated to driving innovation and delivering cutting-edge technological solutions that empower businesses to thrive. My role involves shaping the company's vision, building strategic partnerships, and leading teams to create impactful products and services. At Codegrin Technologies, our mission is to redefine excellence in technology and provide seamless experiences for our clients."
+          /> */}
           <ResumeCard
             title="Jr. Web Developer"
             subTitle="Cipher Craft Pvt. Ltd - (March/2023 - December/2024)"
