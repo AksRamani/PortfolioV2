@@ -50,6 +50,12 @@ const Education = () => {
             des="As frontend developer at Codegrin Technologies, I am dedicated to driving innovation and delivering cutting-edge technological solutions that empower businesses to thrive. My role involves shaping the company's vision, building strategic partnerships, and leading teams to create impactful products and services. At Codegrin Technologies, our mission is to redefine excellence in technology and provide seamless experiences for our clients."
           /> */}
           <ResumeCard
+            title="Software Engineer"
+            subTitle="ManekTech - (April/2025 - current)"
+            result="Ahmedabad"
+            des="At ManekTech, I embarked on a transformative journey to advance my skills as a full-stack developer, working with technologies such as Node.js, MongoDB, and modern React UI libraries like MUI and Ant Design. Through consistent dedication, valuable mentorship, and hands-on project experience, I progressed from a novice to a confident and proficient developer. This journey not only deepened my technical expertise but also strengthened my problem-solving abilities and adaptability. As I continue to grow in my career, I carry forward the knowledge, discipline, and experience gained during my time at ManekTech—prepared to take on even the most complex challenges. "
+          />
+          <ResumeCard
             title="Jr. Web Developer"
             subTitle="Cipher Craft Pvt. Ltd - (March/2023 - December/2024)"
             result="Rajkot"
@@ -65,7 +71,7 @@ const Education = () => {
             title="Internship "
             subTitle="Vnurture Technologies (June - 2022)"
             result="Ahemdabad (WFH)"
-            des="15 Days Internship as a part of 7th sem GTU. During that 15 days internship i get basic knowledge about the reactjs and javascript."
+            des="15 Days Internship as a part of 7th sem GTU. During that 15 days internship i get basic knowledge about the Html, css, Javascript and React JS."
           />
         </div>
       </div>
