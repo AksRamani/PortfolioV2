@@ -14,7 +14,7 @@ const Resume = () => {
     >
       <FadeIn>
         <div className="flex justify-center items-center text-center">
-          <Title title="1+ YEARS OF EXPERIENCE" des="My Resume" />
+          <Title title="3+ YEARS OF EXPERIENCE" des="My Resume" />
         </div>
         <div>
         </div>
